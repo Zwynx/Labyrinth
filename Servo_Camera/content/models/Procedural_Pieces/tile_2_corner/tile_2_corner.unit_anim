@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "bcc53397-934d-4957-ad15-c625bdcd6674"
+_name = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+anim_controller_ref = {
+	_id = "6ba2169a-434d-425a-9056-1a281ff3c882"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "ee8f379f-af25-4e84-a68f-379bd63642e0"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "cbc57860-724c-4ae9-a79b-9400bae42b7f"
+	ref_filename = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"

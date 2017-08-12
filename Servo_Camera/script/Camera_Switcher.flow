@@ -1,0 +1,535 @@
+
+nodes = [
+	{
+		id = "1c6e4b5a-8c5a-4e5e-b782-3d81a1b99557"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "04f14ebc-d914-4b41-bc05-48b48dc78726"
+				type = "float"
+				variable = "numeric"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Max_Cameras"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "45d0ba83-b9b4-4790-a5c7-9c1483a2caf7"
+		in_variables = {
+			name = {
+				node = "489bea98-a7d7-4024-8977-d349703fa4d3"
+				type = "string"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "get_unit_variable"
+		variable_values = {
+			name = null
+			scope = "local"
+			unit = null
+		}
+	}
+	{
+		id = "489bea98-a7d7-4024-8977-d349703fa4d3"
+		in_variables = {
+			a = {
+				type = "string"
+			}
+			b = {
+				node = "de8b3f65-d98a-48f8-8899-02387f56dd9d"
+				type = "string"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "concatenate_strings"
+		variable_values = {
+			a = "Camera_"
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "888199f7-f3a9-4f13-bcdd-329b8815af9a"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Camera_Index"
+			numeric = 1
+			scope = "local"
+		}
+	}
+	{
+		id = "ba4fb7e9-306f-4b57-9f44-9f519c607e19"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Camera_Index"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "de8b3f65-d98a-48f8-8899-02387f56dd9d"
+		in_variables = {
+			numeric = {
+				node = "ba4fb7e9-306f-4b57-9f44-9f519c607e19"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "numeric_to_string"
+		variable_values = {
+			numeric = null
+			value = null
+		}
+	}
+	{
+		id = "65e27ba7-a7fc-4a3d-96bd-93af1d886077"
+		in_variables = {
+			a = {
+				node = "ba4fb7e9-306f-4b57-9f44-9f519c607e19"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				node = "6360c0e4-79d9-4a6f-9884-bea8e57dc57e"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_events = {
+			equal = [
+				{
+					event = 0
+					id = "594e0d44-e768-403c-98fa-79e376a7c277:0"
+					node = "594e0d44-e768-403c-98fa-79e376a7c277"
+				}
+			]
+			less = [
+				{
+					event = 0
+					id = "fccb0544-2c46-4020-b5bd-2a43cd8b5285:0"
+					node = "fccb0544-2c46-4020-b5bd-2a43cd8b5285"
+				}
+			]
+		}
+		type = "compare_node"
+		variable_values = {
+			a = null
+			b = null
+		}
+	}
+	{
+		id = "263a454d-9584-4908-abcb-d15880c27c60"
+		in_variables = {
+			a = {
+				node = "ba4fb7e9-306f-4b57-9f44-9f519c607e19"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_plus_numeric"
+		variable_values = {
+			a = null
+			b = 1
+			value = null
+		}
+	}
+	{
+		id = "fccb0544-2c46-4020-b5bd-2a43cd8b5285"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "263a454d-9584-4908-abcb-d15880c27c60"
+				type = "float"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Camera_Index"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "594e0d44-e768-403c-98fa-79e376a7c277"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Camera_Index"
+			numeric = 1
+			scope = "local"
+		}
+	}
+	{
+		id = "6360c0e4-79d9-4a6f-9884-bea8e57dc57e"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Max_Cameras"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "409150b8-0c53-4f95-bb68-68ed44598a99"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "1c6e4b5a-8c5a-4e5e-b782-3d81a1b99557:0"
+					node = "1c6e4b5a-8c5a-4e5e-b782-3d81a1b99557"
+				}
+				{
+					event = 0
+					id = "888199f7-f3a9-4f13-bcdd-329b8815af9a:0"
+					node = "888199f7-f3a9-4f13-bcdd-329b8815af9a"
+				}
+			]
+		}
+		type = "once"
+	}
+	{
+		id = "04f14ebc-d914-4b41-bc05-48b48dc78726"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
+		variable_values = {
+			name = "Camera Amount In"
+			numeric = null
+		}
+	}
+	{
+		id = "ee6b22c4-a8dd-4bf8-8381-53a272ab5dc0"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "0bed017f-3466-45cd-9554-5d56e68e14ee:0"
+					node = "0bed017f-3466-45cd-9554-5d56e68e14ee"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Camera Switcher In"
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "bedea0a9-7942-436b-ad77-7bf510a9153a"
+		in_variables = {
+			camera = {
+				type = "camera"
+			}
+			unit = {
+				node = "45d0ba83-b9b4-4790-a5c7-9c1483a2caf7"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		name = "Set Active Camera"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "65e27ba7-a7fc-4a3d-96bd-93af1d886077:0"
+					node = "65e27ba7-a7fc-4a3d-96bd-93af1d886077"
+				}
+			]
+		}
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			camera = null
+			unit = null
+		}
+		variables = [
+			{
+				name = "camera"
+				type = "camera"
+			}
+			{
+				name = "unit"
+				type = "unit"
+			}
+		]
+	}
+	{
+		id = "333c7b90-c4c0-4f6f-92cb-d446ee7ce6ba"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "Camera 1 Unit In"
+			unit = null
+		}
+	}
+	{
+		id = "4178cc23-7761-4721-bcaa-9a40d77a65ea"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			unit = {
+				node = "333c7b90-c4c0-4f6f-92cb-d446ee7ce6ba"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_variable"
+		variable_values = {
+			name = "Camera_1"
+			scope = "local"
+			unit = null
+		}
+	}
+	{
+		id = "527b24ad-d8d3-4455-afed-ea0631a444b1"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "Camera 2 Unit In"
+			unit = null
+		}
+	}
+	{
+		id = "805d77f5-f479-4bbb-978c-9256de141d75"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			unit = {
+				node = "527b24ad-d8d3-4455-afed-ea0631a444b1"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_variable"
+		variable_values = {
+			name = "Camera_2"
+			scope = "local"
+			unit = null
+		}
+	}
+	{
+		id = "df824cfd-e1ca-4501-967b-2c4698e21f3f"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "Camera 3 Unit In"
+			unit = null
+		}
+	}
+	{
+		id = "47502764-7983-4b0e-8af3-34e6bb942bcf"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			unit = {
+				node = "df824cfd-e1ca-4501-967b-2c4698e21f3f"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_variable"
+		variable_values = {
+			name = "Camera_3"
+			scope = "local"
+			unit = null
+		}
+	}
+	{
+		id = "562a97b7-156c-4b7f-9358-f896832c19c2"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "Camera 4 Unit In"
+			unit = null
+		}
+	}
+	{
+		id = "7ff1f5f4-3136-489d-96f0-f0ff55572554"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			unit = {
+				node = "562a97b7-156c-4b7f-9358-f896832c19c2"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "set_unit_variable"
+		variable_values = {
+			name = "Camera_4"
+			scope = "local"
+			unit = null
+		}
+	}
+	{
+		id = "0bed017f-3466-45cd-9554-5d56e68e14ee"
+		out_events = {
+			out1 = [
+				{
+					event = 0
+					id = "4178cc23-7761-4721-bcaa-9a40d77a65ea:0"
+					node = "4178cc23-7761-4721-bcaa-9a40d77a65ea"
+				}
+				{
+					event = 0
+					id = "805d77f5-f479-4bbb-978c-9256de141d75:0"
+					node = "805d77f5-f479-4bbb-978c-9256de141d75"
+				}
+				{
+					event = 0
+					id = "47502764-7983-4b0e-8af3-34e6bb942bcf:0"
+					node = "47502764-7983-4b0e-8af3-34e6bb942bcf"
+				}
+				{
+					event = 0
+					id = "7ff1f5f4-3136-489d-96f0-f0ff55572554:0"
+					node = "7ff1f5f4-3136-489d-96f0-f0ff55572554"
+				}
+				{
+					event = 0
+					id = "409150b8-0c53-4f95-bb68-68ed44598a99:0"
+					node = "409150b8-0c53-4f95-bb68-68ed44598a99"
+				}
+			]
+			out2 = [
+				{
+					event = 0
+					id = "bedea0a9-7942-436b-ad77-7bf510a9153a:0"
+					node = "bedea0a9-7942-436b-ad77-7bf510a9153a"
+				}
+			]
+		}
+		type = "sequence"
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

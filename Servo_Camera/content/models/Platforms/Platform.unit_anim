@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "398cf3c8-6469-460a-b913-40f1f106730d"
+_name = "content/models/Platforms/Platform"
+anim_controller_ref = {
+	_id = "1d5b4f63-699d-4518-881e-e5d3c8474066"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "816482e3-b563-4a64-8536-e585ad7ac535"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "d88b0952-382a-4bc8-a8ae-6f585ee78073"
+	ref_filename = "content/models/Platforms/Platform.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Platforms/Platform"

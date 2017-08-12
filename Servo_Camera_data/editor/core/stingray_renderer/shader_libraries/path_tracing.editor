@@ -1,0 +1,35 @@
+
+"#ID[3b19ef6589f320e0]" = {
+	defines = ""
+	semantics = [
+	]
+	shader = "lightmap_filter"
+	variables = [
+	]
+}
+"#ID[4603247b7318319e]" = {
+	defines = ""
+	semantics = [
+	]
+	shader = "path_tracing"
+	variables = [
+	]
+}
+"#ID[7ffbbe97cf795d22]" = {
+	defines = ""
+	semantics = [
+	]
+	shader = "lightmap_edge_dilate"
+	variables = [
+	]
+}
+"#ID[a6fb4bc90b7068dd]" = {
+	defines = [
+		"LIGHTMAP"
+	]
+	semantics = [
+	]
+	shader = "path_tracing"
+	variables = [
+	]
+}

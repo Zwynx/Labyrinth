@@ -1,0 +1,10 @@
+
+movers = [
+	{
+		collision_filter = "default"
+		height = 1.5
+		name = "mover"
+		radius = 0.5
+		slope_limit = 0.785398163397448
+	}
+]

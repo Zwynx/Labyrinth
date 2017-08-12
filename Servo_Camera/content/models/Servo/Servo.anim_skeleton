@@ -1,0 +1,499 @@
+
+_data_root_version = 1
+_id = "0f3d57af-19e5-4627-a5bf-c74f30b115d3"
+_name = "content/models/Servo/Servo"
+anim_blend_sets = [
+]
+anim_bones = [
+	{
+		_id = "5cdaef53-1ad2-4f46-bfcb-8da0207c9bea"
+		_name = "StingrayEntityRoot"
+		lod_level = 5
+	}
+	{
+		_id = "b8fa9667-ffe3-47bc-ad54-522b46981a0d"
+		_name = "FbxAxisSystem_ConvertNode"
+		lod_level = 5
+	}
+	{
+		_id = "cd585336-c3d9-4be9-b332-1847ae8dff31"
+		_name = "Servo_Reference"
+		lod_level = 5
+	}
+	{
+		_id = "38c242b8-434b-4344-a974-ca3b2fc85d99"
+		_name = "Servo_grp"
+		lod_level = 5
+	}
+	{
+		_id = "6edbc533-cc9a-46f9-88b8-dfa3250b1c27"
+		_name = "Servo_Hips"
+		lod_level = 5
+	}
+	{
+		_id = "1054a733-baaf-4714-907e-7c82fd3a07bd"
+		_name = "Servo_geo"
+		lod_level = 5
+	}
+	{
+		_id = "47142cf7-e5d7-44d2-8e41-c65feed62a4f"
+		_name = "Face_grp"
+		lod_level = 5
+	}
+	{
+		_id = "a9250b22-1d21-4926-89c3-c5ba1c3d3ea2"
+		_name = "Servo_Spine"
+		lod_level = 5
+	}
+	{
+		_id = "3edc31c6-8540-4210-9bd4-8d0890cbd2ef"
+		_name = "Servo_LeftUpLeg"
+		lod_level = 5
+	}
+	{
+		_id = "a83abe7e-9a55-488e-8fb5-44883b87fcdf"
+		_name = "Servo_RightUpLeg"
+		lod_level = 5
+	}
+	{
+		_id = "56017695-b6ef-43d5-883a-f058d769f8dd"
+		_name = "Left_Eyebrow_geo"
+		lod_level = 5
+	}
+	{
+		_id = "af37e945-09ee-4cf7-a3da-e4f163d97589"
+		_name = "Mouth_geo"
+		lod_level = 5
+	}
+	{
+		_id = "9c9aadab-1fb8-4c21-b34c-d95d90376ee2"
+		_name = "Left_Eye_geo"
+		lod_level = 5
+	}
+	{
+		_id = "29b4ab25-7233-4a9b-a401-b58957702dea"
+		_name = "Right_Eye_geo"
+		lod_level = 5
+	}
+	{
+		_id = "af693671-dab2-4082-a6d5-f4b514e29379"
+		_name = "Right_Eyebrow_geo"
+		lod_level = 5
+	}
+	{
+		_id = "98311849-9d11-44dc-bbfd-5df523751529"
+		_name = "Servo_Head"
+		lod_level = 5
+	}
+	{
+		_id = "b5cf5278-0df4-4d38-94b1-55a15438e808"
+		_name = "Servo_LeftArm"
+		lod_level = 5
+	}
+	{
+		_id = "8c4b5c5d-1546-4ef1-8a86-76f350563174"
+		_name = "Servo_RightArm"
+		lod_level = 5
+	}
+	{
+		_id = "23588ac9-e2a4-4000-9f3c-9164e321ee4b"
+		_name = "Servo_LeftLeg"
+		lod_level = 5
+	}
+	{
+		_id = "34fa9edd-cde4-4242-b6d8-3cd6ea5cc07c"
+		_name = "Servo_RightLeg"
+		lod_level = 5
+	}
+	{
+		_id = "c5860860-17a5-4fea-a9f5-e1767e982d84"
+		_name = "Servo_Eyes"
+		lod_level = 5
+	}
+	{
+		_id = "4fec10e8-6c69-4ec2-8feb-cb1f1940ca13"
+		_name = "Servo_Mouth"
+		lod_level = 5
+	}
+	{
+		_id = "35812811-87a2-4e05-b5ce-3e059a6a8057"
+		_name = "Servo_LeftForeArm"
+		lod_level = 5
+	}
+	{
+		_id = "b572379b-0d62-404e-bd5f-66ae351870e9"
+		_name = "Servo_RightForeArm"
+		lod_level = 5
+	}
+	{
+		_id = "0dc1186d-e386-4958-80df-f634665bb8b5"
+		_name = "Servo_LeftFoot"
+		lod_level = 5
+	}
+	{
+		_id = "2098f25d-fd92-4a01-a20f-030f813dc871"
+		_name = "Servo_RightFoot"
+		lod_level = 5
+	}
+	{
+		_id = "d57cfb06-1994-4a3c-ba69-d19035368807"
+		_name = "Servo_Left_UpEye"
+		lod_level = 5
+	}
+	{
+		_id = "4321bd80-37aa-47b9-894d-721ae5112ce7"
+		_name = "Servo_Left_DownEye"
+		lod_level = 5
+	}
+	{
+		_id = "13337a12-6949-40a6-a9a4-89dac79e4145"
+		_name = "Servo_Left_Outer_Eyebrow"
+		lod_level = 5
+	}
+	{
+		_id = "c41c589c-7a7a-49e0-8457-31816cf64a50"
+		_name = "Servo_Left_Inner_Eyebrow"
+		lod_level = 5
+	}
+	{
+		_id = "67ea6564-7a3d-446c-b6bd-73b25fd7f730"
+		_name = "Servo_Right_UpEye"
+		lod_level = 5
+	}
+	{
+		_id = "11ab7267-ab28-44f1-85b8-198e8d6a9984"
+		_name = "Servo_Right_DownEye"
+		lod_level = 5
+	}
+	{
+		_id = "4c9be30d-cb99-406c-be6c-3c1a8da3c3cb"
+		_name = "Servo_Right_Outer_Eyebrow"
+		lod_level = 5
+	}
+	{
+		_id = "45bee647-f578-49c0-be0a-e08cb8385774"
+		_name = "Servo_Right_Inner_Eyebrow"
+		lod_level = 5
+	}
+	{
+		_id = "04664837-3df0-46ca-8274-ff846fad7e64"
+		_name = "Servo_Left_CornerLip"
+		lod_level = 5
+	}
+	{
+		_id = "94aa2798-2422-48f0-8deb-dc9cd5cb4d40"
+		_name = "Servo_Left_UpLip"
+		lod_level = 5
+	}
+	{
+		_id = "43f05c2d-6adf-473d-989b-6ab43fb8704d"
+		_name = "Servo_Left_DownLip"
+		lod_level = 5
+	}
+	{
+		_id = "96e99f02-489d-466f-9a2c-c8e6d3d9a88a"
+		_name = "Servo_Center_UpLip"
+		lod_level = 5
+	}
+	{
+		_id = "30c73f5e-5cb5-4b8e-9bf0-1063b1776944"
+		_name = "Servo_Center_DownLip"
+		lod_level = 5
+	}
+	{
+		_id = "a3deda66-17ae-48dc-a828-56425549061a"
+		_name = "Servo_Right_CornerLip"
+		lod_level = 5
+	}
+	{
+		_id = "c4e931ae-639c-466e-b658-607a6dd5d139"
+		_name = "Servo_Right_DownLip"
+		lod_level = 5
+	}
+	{
+		_id = "4f506cc5-81f5-4338-9fa3-8ececabadc1c"
+		_name = "Servo_Right_UpLip"
+		lod_level = 5
+	}
+	{
+		_id = "54ff352e-f179-4a7b-bb61-d39d05829935"
+		_name = "Servo_LeftHand"
+		lod_level = 5
+	}
+	{
+		_id = "8feb9cc3-3c13-41f6-aa69-109f82cf88bf"
+		_name = "Servo_RightHand"
+		lod_level = 5
+	}
+	{
+		_id = "33f489bf-1a59-4bc2-b40c-edf772034ffc"
+		_name = "Servo_LeftToeBase"
+		lod_level = 5
+	}
+	{
+		_id = "2b4f802c-53b6-4019-9bfe-4320d1b06f57"
+		_name = "Servo_RightToeBase"
+		lod_level = 5
+	}
+	{
+		_id = "e1097329-c5f5-4fdf-86f0-e9fb109abe32"
+		_name = "Servo_Left_UpEye_End"
+		lod_level = 5
+	}
+	{
+		_id = "eca61865-ab92-42a1-a526-233452847e8a"
+		_name = "Servo_Left_DownEye_End"
+		lod_level = 5
+	}
+	{
+		_id = "d5d38f7b-abf4-46a5-bb71-4765e80b9bf3"
+		_name = "Servo_Left_Outer_Eyebrow_End"
+		lod_level = 5
+	}
+	{
+		_id = "995ee6e1-8d30-4be7-8314-e1f232388141"
+		_name = "Servo_Left_Inner_Eyebrow_End"
+		lod_level = 5
+	}
+	{
+		_id = "9940b376-2d66-4e9c-9e3c-b790a7a22a0c"
+		_name = "Servo_Right_UpEye_End"
+		lod_level = 5
+	}
+	{
+		_id = "319920d6-0744-46cb-952a-cc3275a23c18"
+		_name = "Servo_Right_DownEye_End"
+		lod_level = 5
+	}
+	{
+		_id = "8a764ae3-c48a-43a0-a63b-e57379a00f11"
+		_name = "Servo_Right_Outer_Eyebrow_End"
+		lod_level = 5
+	}
+	{
+		_id = "ecb63ca3-9770-419e-a806-b274802ebd5b"
+		_name = "Servo_Right_Inner_Eyebrow_End"
+		lod_level = 5
+	}
+	{
+		_id = "3fb86f7f-ca08-4d20-b664-99be5267d37e"
+		_name = "Servo_Left_CornerLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "b2383db9-484c-42e7-bacf-544545eae2bb"
+		_name = "Servo_Left_UpLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "e848ec25-5790-4026-91ca-944a7ff5eb2a"
+		_name = "Servo_Left_DownLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "60ee4af6-b10a-43ef-8de6-f779fd14ac54"
+		_name = "Servo_Center_UpLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "d27d18e2-050e-462e-a4f9-7e3af22f4ef2"
+		_name = "Servo_Center_DownLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "8fd7b750-df4c-472d-81e3-0a2728270735"
+		_name = "Servo_Right_CornerLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "824d6df1-d5d1-4fc7-8552-335a3791bef9"
+		_name = "Servo_Right_DownLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "6ebab48d-d8c0-4ca4-9c62-2c7a82a43e18"
+		_name = "Servo_Right_UpLip_End"
+		lod_level = 5
+	}
+	{
+		_id = "d6686127-ce3d-4f31-99c9-2b0ced93e57a"
+		_name = "Servo_LeftFingerBase"
+		lod_level = 5
+	}
+	{
+		_id = "2aea53d3-74b6-4b00-b4c6-41a3f19ce01c"
+		_name = "Servo_LeftHandThumb1"
+		lod_level = 5
+	}
+	{
+		_id = "b7cc37c0-296f-4b1f-bb5c-9e50734dc060"
+		_name = "Servo_RightFingerBase"
+		lod_level = 5
+	}
+	{
+		_id = "88278fd8-ed94-49ce-866e-07612dc4d0df"
+		_name = "Servo_RightHandThumb1"
+		lod_level = 5
+	}
+	{
+		_id = "1d1ca6b4-c9b2-43ab-868d-1d9e16572b90"
+		_name = "Servo_LeftFootMiddle1"
+		lod_level = 5
+	}
+	{
+		_id = "174c4d58-0324-4aee-83f9-8f7c8be2a4f7"
+		_name = "LeftFoot_AuxEffector_geo"
+		lod_level = 5
+	}
+	{
+		_id = "5c3a68d4-f98e-404d-ad2d-15d42031e52c"
+		_name = "Servo_RightFootMiddle1"
+		lod_level = 5
+	}
+	{
+		_id = "3e090375-559e-4a56-af60-9eee80a95ab3"
+		_name = "RightFoot_AuxEffector_geo"
+		lod_level = 5
+	}
+	{
+		_id = "40a9d7ef-01d5-45c6-a541-f3c8818bdd53"
+		_name = "Servo_Left_UpEye_End1"
+		lod_level = 5
+	}
+	{
+		_id = "58bc7102-70e8-44b7-83b4-e44c0a7fc662"
+		_name = "Servo_Left_DownEye_End1"
+		lod_level = 5
+	}
+	{
+		_id = "7684a8cb-ebdd-4067-871f-6109d737bf1a"
+		_name = "Servo_Left_Outer_Eyebrow_End1"
+		lod_level = 5
+	}
+	{
+		_id = "d9da061d-fcde-4c4e-add5-0ae4025eec9e"
+		_name = "Servo_Left_Inner_Eyebrow_End1"
+		lod_level = 5
+	}
+	{
+		_id = "10a4c252-ba41-4237-9bf8-887c64f7a15a"
+		_name = "Servo_Right_UpEye_End1"
+		lod_level = 5
+	}
+	{
+		_id = "79085598-23ee-4593-bdb6-4b2be6e70787"
+		_name = "Servo_Right_DownEye_End1"
+		lod_level = 5
+	}
+	{
+		_id = "041969ae-e6e3-409c-a2d2-bf7a4c78ef93"
+		_name = "Servo_Right_Outer_Eyebrow_End1"
+		lod_level = 5
+	}
+	{
+		_id = "0235e699-c95e-44cf-9534-f2439cc1d84b"
+		_name = "Servo_Right_Inner_Eyebrow_End1"
+		lod_level = 5
+	}
+	{
+		_id = "dd52a967-22f7-4eb1-8cd1-6178518c3672"
+		_name = "Servo_Left_CornerLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "3aca5827-40f7-44e1-b81a-751cd6ef8a8b"
+		_name = "Servo_Left_UpLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "4137998c-ea25-42ca-a3ad-8edac1f794e3"
+		_name = "Servo_Left_DownLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "5dad096d-4c4b-4613-91d4-73438c667530"
+		_name = "Servo_Center_UpLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "5eadc175-2f6a-485a-9984-5d040f067aba"
+		_name = "Servo_Center_DownLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "a0db936d-6c9b-45b1-b009-376f3204e88c"
+		_name = "Servo_Right_CornerLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "5e134165-52df-4a51-a142-680ac99f0333"
+		_name = "Servo_Right_DownLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "cbaf939c-2d3b-4d0d-953e-58b4750dbfa6"
+		_name = "Servo_Right_UpLip_End1"
+		lod_level = 5
+	}
+	{
+		_id = "c6670e65-32a3-46c6-93dc-bf890852c0bc"
+		_name = "Servo_LeftHandMiddle1"
+		lod_level = 5
+	}
+	{
+		_id = "51611f6a-b1d0-4c90-858c-f337da054bc1"
+		_name = "Servo_LeftHandThumb2"
+		lod_level = 5
+	}
+	{
+		_id = "0d3f9708-eb60-4024-a745-f1aa100e0e21"
+		_name = "Servo_RightHandMiddle1"
+		lod_level = 5
+	}
+	{
+		_id = "b9355e40-65d0-4245-b481-8c539983e3a4"
+		_name = "Servo_RightHandThumb2"
+		lod_level = 5
+	}
+	{
+		_id = "4f8fd21b-84d8-4703-ad25-6f6bc0769700"
+		_name = "Servo_LeftHandMiddle2"
+		lod_level = 5
+	}
+	{
+		_id = "6ad06448-cd5c-4f0c-bada-a91586f9cee0"
+		_name = "Servo_LeftHandThumb3"
+		lod_level = 5
+	}
+	{
+		_id = "533e1148-e544-48c3-b05e-1bbeb3dc133b"
+		_name = "Servo_RightHandMiddle2"
+		lod_level = 5
+	}
+	{
+		_id = "debc14a1-f45b-440e-a5fb-046798742648"
+		_name = "Servo_RightHandThumb3"
+		lod_level = 5
+	}
+	{
+		_id = "6165cd31-9b8d-45e9-b90a-90ef4fab5983"
+		_name = "Servo_LeftHandMiddle3"
+		lod_level = 5
+	}
+	{
+		_id = "ea32cafc-498b-4e12-bc23-f3e51a5e2081"
+		_name = "Servo_RightHandMiddle3"
+		lod_level = 5
+	}
+]
+dcc_asset_ref = {
+	_id = "7be30e67-81c8-4c10-b28f-5038e48a1741"
+	ref_filename = "content/models/Servo/Servo.dcc_asset"
+	ref_id = null
+}
+default_bonelod_and_maxlod_count = 5
+locomotion_root_bone_ref = {
+	_id = "8df9d476-8814-4274-8b0b-8b160d9ab2c4"
+	ref_filename = null
+	ref_id = "cd585336-c3d9-4be9-b332-1847ae8dff31"
+}

@@ -1,0 +1,111 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 3.953516
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			-2.544986
+			-2.913068
+			1.516742
+		]
+		projection_type = "perspective"
+		rotation = [
+			0.091401
+			-0.034185
+			0.348638
+			-0.932163
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+	flow_framing = {
+		scale = 0.833333333333333
+		x = 337.654148148147
+		y = 155.930444444444
+	}
+}
+materials = {
+	Default_Material = "content/models/Servo/Default_Material"
+	Servo_mat = "content/models/Servo/Servo_mat"
+}
+renderables = {
+	Left_Eye_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Left_Eyebrow_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	LeftFoot_AuxEffector_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+	Mouth_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Right_Eye_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	Right_Eyebrow_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	RightFoot_AuxEffector_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = false
+		surface_queries = false
+		viewport_visible = false
+	}
+	Servo_geo = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

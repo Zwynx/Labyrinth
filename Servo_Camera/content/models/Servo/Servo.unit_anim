@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "4737c4da-162b-4ad3-8ee4-c8e22c6243e2"
+_name = "content/models/Servo/Servo"
+anim_controller_ref = {
+	_id = "0af4dee6-1471-4be0-a7d4-3092168a8d2a"
+	ref_filename = "content/models/Servo/Servo_anim_controller.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "2649f122-7376-433e-b4c3-102859ffbbd0"
+	ref_filename = "content/models/Servo/Servo.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "81227a09-15d2-4d7c-aa2f-dc4994464a59"
+	ref_filename = "content/models/Servo/Servo.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Servo/Servo"

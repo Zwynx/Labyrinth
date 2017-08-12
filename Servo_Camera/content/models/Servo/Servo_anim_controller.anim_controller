@@ -1,0 +1,265 @@
+
+_data_root_version = 4
+_id = "5a82609c-1573-4e53-8532-16eb5990662f"
+_name = "content/models/Servo/Servo_anim_controller"
+anim_skeleton_ref = {
+	_id = "29219a20-2a52-423f-bc63-38566f7b23af"
+	ref_filename = "content/models/Servo/Servo.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/Servo/Servo"
+	events = {
+		To_Idle = {
+		}
+		To_Run = {
+		}
+	}
+	layers = [
+		{
+			default_state = "Servo_Idle"
+			states = [
+				{
+					animations = [
+						"content/models/Servo/animations/Servo_Idle"
+					]
+					loop_animation = true
+					name = "Servo_Idle"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "To_Run"
+							mode = "direct"
+							on_beat = ""
+							to = "Servo_Run"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/Servo/animations/Servo_Run"
+					]
+					loop_animation = true
+					name = "Servo_Run"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "To_Idle"
+							mode = "direct"
+							on_beat = ""
+							to = "Servo_Idle"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+			]
+		}
+	]
+}
+constraint_targets = [
+]
+constraints = [
+]
+events = [
+	{
+		_id = "7fc9996e-3f99-46b2-9837-28bb144e1894"
+		_name = "To_Run"
+	}
+	{
+		_id = "2e5c7ea4-8f4e-4b96-a52b-41c52c14c48c"
+		_name = "To_Idle"
+	}
+]
+layers = [
+	{
+		_id = "ed0fdd22-8143-4bbd-bc8b-00995ced165c"
+		_name = "Base"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "c1573a1c-35ac-447a-8a1b-437740f802e7"
+			ref_filename = null
+			ref_id = "91eb6c0b-773a-4447-85f6-476bea7d9a87"
+		}
+		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "91eb6c0b-773a-4447-85f6-476bea7d9a87"
+				_name = "Servo_Idle"
+				anim_blend_set_ref = {
+					_id = "b2defd2c-7cb4-40e2-95fe-3fb23a92bb01"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "f6977d82-ae36-4175-85f3-752577fa5d6e"
+						ref_filename = "content/models/Servo/animations/Servo_Idle.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "78cd5faf-5e28-4b64-aca3-8636255d40fa"
+					ref_filename = null
+					ref_id = "7fc9996e-3f99-46b2-9837-28bb144e1894"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "c9a308d5-cfea-4427-bafe-b45af36acc43"
+						actual_target_ref = {
+							_id = "33f4e632-1bab-45ab-8f7e-0f69443787ae"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "d710d6b3-6f78-4f47-affe-6c02d0543ade"
+							ref_filename = null
+							ref_id = "7fc9996e-3f99-46b2-9837-28bb144e1894"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "815ac17e-6c3b-46ba-bf48-10c99ec7ca0b"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "e6c06489-d8cb-43be-9353-4147e6e65158"
+							ref_filename = null
+							ref_id = "6f80a2a9-79c1-4331-bd40-0e4816e89888"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 40
+				y = 100
+			}
+			{
+				_id = "6f80a2a9-79c1-4331-bd40-0e4816e89888"
+				_name = "Servo_Run"
+				anim_blend_set_ref = {
+					_id = "cabde51d-2fa9-498f-b2e8-1c4f82a6ed45"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "b3974c88-1137-4caf-90f8-9c3942e2fdbc"
+						ref_filename = "content/models/Servo/animations/Servo_Run.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "603c4836-db2e-49c0-a28c-c7df23652529"
+					ref_filename = null
+					ref_id = "7fc9996e-3f99-46b2-9837-28bb144e1894"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "b7c17c7c-aa70-4149-9c6d-66bddb7a8152"
+						actual_target_ref = {
+							_id = "4aed0ed0-0a49-4f17-8845-6c2962c3c918"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "768dfc20-cb88-4f0b-963d-3c919015e5f6"
+							ref_filename = null
+							ref_id = "2e5c7ea4-8f4e-4b96-a52b-41c52c14c48c"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "6f0859b7-4909-4492-a32a-5318003fb5ff"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "5854b2a8-c4cc-4792-8cf3-92c8a2ab638f"
+							ref_filename = null
+							ref_id = "91eb6c0b-773a-4447-85f6-476bea7d9a87"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = 320
+				y = 100
+			}
+		]
+		time_states = [
+		]
+	}
+]
+ragdolls = [
+]
+setup = {
+	_id = "3a143507-ecaa-42b4-9233-e666f0eab89c"
+	level = "core/editor_slave/levels/animation_preview"
+	unit_ref = {
+		_id = "b9853ddc-8d6b-4d51-975d-dc023c392c60"
+		ref_filename = "content/models/Servo/Servo.unit_anim"
+		ref_id = null
+	}
+}
+variables = [
+]

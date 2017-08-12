@@ -1,0 +1,221 @@
+
+nodes = [
+	{
+		id = "c952b92c-bc34-4999-9dfd-2e50cd60edf1"
+		in_variables = {
+			forward = {
+				node = "b7f9c633-37d3-4d7b-b743-b8a433a5541c"
+				type = "vector3"
+				variable = "value"
+			}
+			up = {
+				type = "vector3"
+			}
+		}
+		out_variables = {
+			rotation = {
+				type = "quaternion"
+			}
+		}
+		type = "rotation_from_vectors"
+		variable_values = {
+			forward = null
+			rotation = null
+			up = [
+				0
+				0
+				1
+			]
+		}
+	}
+	{
+		id = "98708416-78d4-4139-8ef7-eced4652c8d9"
+		in_variables = {
+			camera = {
+				type = "camera"
+			}
+			unit = {
+				node = "30d88eb3-f24f-4be4-9122-95cc92343821"
+				type = "unit"
+				variable = "Unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_camera_world_position"
+		variable_values = {
+			camera = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "b7f9c633-37d3-4d7b-b743-b8a433a5541c"
+		in_variables = {
+			a = {
+				node = "d42261ea-fc93-4a99-89d7-0baaa93cdf0d"
+				type = "vector3"
+				variable = "value"
+			}
+			b = {
+				node = "98708416-78d4-4139-8ef7-eced4652c8d9"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "vector3"
+			}
+		}
+		type = "vector_minus_vector"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "d42261ea-fc93-4a99-89d7-0baaa93cdf0d"
+		in_variables = {
+			a = {
+				type = "vector3"
+			}
+			b = {
+				node = "c3cd24fa-36a2-4838-a1e0-48c59b7e92ee"
+				type = "vector3"
+				variable = "position"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "vector3"
+			}
+		}
+		type = "vector_plus_vector"
+		variable_values = {
+			a = [
+				0
+				0
+				3
+			]
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "c3cd24fa-36a2-4838-a1e0-48c59b7e92ee"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "33ab14ee-b48c-4540-aa55-ab5a9b5ba170"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			position = {
+				type = "vector3"
+			}
+		}
+		type = "get_unit_world_position"
+		variable_values = {
+			object = null
+			position = null
+			unit = null
+		}
+	}
+	{
+		id = "33ab14ee-b48c-4540-aa55-ab5a9b5ba170"
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "external_input_unit"
+		variable_values = {
+			name = "Target Unit In"
+			unit = null
+		}
+	}
+	{
+		id = "8f27f145-60ff-4877-9594-3ba959b857ad"
+		in_variables = {
+			camera = {
+				type = "camera"
+			}
+			rotation = {
+				node = "c952b92c-bc34-4999-9dfd-2e50cd60edf1"
+				type = "quaternion"
+				variable = "rotation"
+			}
+			unit = {
+				node = "30d88eb3-f24f-4be4-9122-95cc92343821"
+				type = "unit"
+				variable = "Unit"
+			}
+		}
+		type = "set_camera_local_rotation"
+		variable_values = {
+			camera = null
+			rotation = null
+			unit = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "30d88eb3-f24f-4be4-9122-95cc92343821"
+		name = "Get Active Camera"
+		out_variables = {
+			Unit = {
+				type = "unit"
+			}
+		}
+		query = true
+		return_values = [
+			{
+				name = "Camera"
+				type = "camera"
+			}
+			{
+				name = "Unit"
+				type = "unit"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Camera = null
+			Unit = null
+		}
+		variables = [
+		]
+	}
+	{
+		id = "1cf0e5b3-e3ef-480c-8946-0797e76d6a32"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "8f27f145-60ff-4877-9594-3ba959b857ad:0"
+					node = "8f27f145-60ff-4877-9594-3ba959b857ad"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Camera Aim Constraint In"
+		}
+	}
+	{
+		id = "11111111-2222-3333-4444-555555555555"
+		type = "unit_spawned"
+		variable_values = {
+			unit = null
+		}
+	}
+]

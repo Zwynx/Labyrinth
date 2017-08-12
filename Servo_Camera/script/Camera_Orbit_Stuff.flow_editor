@@ -1,0 +1,1011 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "5b2357ad-6e18-4838-9741-f7695a0aecff"
+		Id = "92bfc8f4-0ff4-44e6-9aa4-ab0e0eb7a1a1"
+		ToItem = "Vector"
+		ToNode = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "fda3bddc-98f0-425b-addf-80a10de7be65"
+		Id = "f8b1cf25-b475-4c14-bfa5-b63ef541055c"
+		ToItem = "B"
+		ToNode = "172a94c0-0ef3-419f-b9c2-8bcfe3e545d5"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "172a94c0-0ef3-419f-b9c2-8bcfe3e545d5"
+		Id = "fe76849d-b55f-4f64-859a-f4d04c561410"
+		ToItem = "B"
+		ToNode = "b7f171a3-a193-41bb-8835-69b86d288b9f"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "b7f171a3-a193-41bb-8835-69b86d288b9f"
+		Id = "09a0baa8-189f-4cce-93ab-ea6f62a34ad6"
+		ToItem = "Position"
+		ToNode = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "4c20f186-5d5a-486d-9454-d64fd65bc3bd"
+		Id = "0c0e2385-5aa7-4cc2-8f80-16c1b1c91b1b"
+		ToItem = "B"
+		ToNode = "6bde7fdf-bdc3-4bc5-8b4c-f9d7778c82c5"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "a3c596ef-6209-43d6-a90d-ee1acfc6a1a7"
+		Id = "0fb5400d-af5e-49e8-8ce4-afed41f8f4bc"
+		Priority = 0
+		ToItem = "Camera Aim Constraint In"
+		ToNode = "a6b7cc77-9538-43bd-a51e-28e4ba9c3a19"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "0d9c2e7e-ad57-40b2-921b-e5447701ac42"
+		Id = "123ca558-fb9f-48d9-bfae-6a5e55546b4f"
+		ToItem = "Unit"
+		ToNode = "fda3bddc-98f0-425b-addf-80a10de7be65"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out2"
+		FromNode = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		Id = "15a394be-6ba0-4c94-86fe-3dc763f29e23"
+		Priority = 0
+		ToItem = "Increase"
+		ToNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+		Id = "17c32e43-483f-473e-bf41-2eb2a8827dd6"
+		ToItem = "Numeric"
+		ToNode = "e61e2543-d901-45e7-9f79-df93195f95f3"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "fb7cc417-04ef-4cb9-a01f-0ef4a4c2a33d"
+		Id = "20ea8e7e-76ba-49b4-8098-b1cee8b79ef2"
+		ToItem = "Unit"
+		ToNode = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Vector"
+		FromNode = "c8bb2d6b-35fe-4bf7-80fa-367ca6c969ed"
+		Id = "2187f044-21e9-4006-9c7b-38c5a6ea0062"
+		ToItem = "A"
+		ToNode = "b7f171a3-a193-41bb-8835-69b86d288b9f"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "fc087674-7e38-4ad3-a7fe-84a57aa8bfe9"
+		Id = "25ad94a9-1121-425b-897f-b04cd5e10491"
+		ToItem = "B"
+		ToNode = "50a88c51-092e-45d3-85e4-0bd3e4e424cc"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "e43f0e08-f2e0-4696-9f77-568c516072f2"
+		Id = "2f8d5b58-f1d1-449d-ac6a-e13116cf9549"
+		Priority = 0
+		ToItem = "Set"
+		ToNode = "9c69bac8-7f86-4b11-84e1-fff7d4b9a922"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+		Id = "316e1466-ad02-4766-8667-8cb9edfe9b1c"
+		ToItem = "Numeric"
+		ToNode = "584a32ff-8d26-49a5-9c6b-2527bf588dfb"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+		Id = "34b88a24-d80a-4b30-acf1-03ce429ff44f"
+		ToItem = "Numeric"
+		ToNode = "140f9814-52c5-41f8-bb03-749a2aa9e116"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "50a88c51-092e-45d3-85e4-0bd3e4e424cc"
+		Id = "38bf56ff-b14e-45a3-990e-3b028d79b982"
+		ToItem = "Z"
+		ToNode = "c8bb2d6b-35fe-4bf7-80fa-367ca6c969ed"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "bc9ef990-dcd8-4d88-83f0-7c6221c2740f"
+		Id = "469e65c4-d377-4234-9894-a07bcdd3a5f7"
+		ToItem = "A"
+		ToNode = "5eb3ea52-609c-4b26-a287-914c9bbf5a9e"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "fb7cc417-04ef-4cb9-a01f-0ef4a4c2a33d"
+		Id = "471a9568-b5f3-4733-bb3d-af8cdebbc005"
+		ToItem = "Unit"
+		ToNode = "2911dd6a-c36e-41c8-9dee-1c2d80ace4fd"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Y"
+		FromNode = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		Id = "523edaa6-b8ae-4966-9c0e-8aef47e04e8c"
+		ToItem = "Increment"
+		ToNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Numeric"
+		FromNode = "f55a8b69-4047-4ff8-9c8b-58fbc5d321fa"
+		Id = "56191853-78c8-4c56-82ab-108e496b3dfd"
+		ToItem = "B"
+		ToNode = "12d92ddf-e785-4b12-a68f-b1c5345a536b"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+		Id = "5e5fcce5-06b4-4afa-a1de-6bd686d0347e"
+		ToItem = "Numeric"
+		ToNode = "bc9ef990-dcd8-4d88-83f0-7c6221c2740f"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "0da530a8-32de-4396-996f-dc7b53a2a219"
+		Id = "5ed87d15-7004-4de7-905a-8ad57199a83c"
+		ToItem = "A"
+		ToNode = "12d92ddf-e785-4b12-a68f-b1c5345a536b"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "e61e2543-d901-45e7-9f79-df93195f95f3"
+		Id = "5f39c442-191f-4f84-9e82-df12c8a91c72"
+		ToItem = "B"
+		ToNode = "0da530a8-32de-4396-996f-dc7b53a2a219"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
+		Id = "66d94c6d-1e2d-46fe-b235-4967a2bc193d"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "a3c596ef-6209-43d6-a90d-ee1acfc6a1a7"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "fb7cc417-04ef-4cb9-a01f-0ef4a4c2a33d"
+		Id = "7b54471c-4204-4750-9dd9-afa3199736c6"
+		ToItem = "Unit"
+		ToNode = "a3c596ef-6209-43d6-a90d-ee1acfc6a1a7"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "02a985d9-189f-4ebb-a814-7d62bee95608"
+		Id = "8c77b8d9-df3b-4dda-8e25-d222627cd16a"
+		ToItem = "Numeric"
+		ToNode = "9c69bac8-7f86-4b11-84e1-fff7d4b9a922"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out2"
+		FromNode = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		Id = "9097db0c-e9b5-47ef-9ef6-09fbb4f6d9ee"
+		Priority = 0
+		ToItem = "Increase"
+		ToNode = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out3"
+		FromNode = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		Id = "96f50e7d-a774-4442-8be2-89ec4a3eb68b"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out1"
+		FromNode = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		Id = "a15283dc-e20a-418c-ae68-a636d98d4a15"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "e43f0e08-f2e0-4696-9f77-568c516072f2"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Unit"
+		FromNode = "0d9c2e7e-ad57-40b2-921b-e5447701ac42"
+		Id = "a3767f0e-fb2b-43a0-85ab-74e1fb43128a"
+		ToItem = "Target Unit In"
+		ToNode = "a6b7cc77-9538-43bd-a51e-28e4ba9c3a19"
+		Type = "Unit"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "5eb3ea52-609c-4b26-a287-914c9bbf5a9e"
+		Id = "a4bb5d56-c52d-40b4-996c-5fc887efe02c"
+		ToItem = "A"
+		ToNode = "6bde7fdf-bdc3-4bc5-8b4c-f9d7778c82c5"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "140f9814-52c5-41f8-bb03-749a2aa9e116"
+		Id = "b1bdd48c-b341-479d-a033-deacfca168b6"
+		ToItem = "B"
+		ToNode = "5eb3ea52-609c-4b26-a287-914c9bbf5a9e"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "X"
+		FromNode = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		Id = "bfc04645-4f56-4eee-86d5-e821662967a8"
+		ToItem = "Increment"
+		ToNode = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "6d0ec5ca-37a3-4e55-ad58-47302295bdda"
+		Id = "cbc5114c-36b3-4e63-8332-94a110e65081"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6bde7fdf-bdc3-4bc5-8b4c-f9d7778c82c5"
+		Id = "cd62520f-9809-44c3-9ba7-c5fb0948b174"
+		ToItem = "X"
+		ToNode = "c8bb2d6b-35fe-4bf7-80fa-367ca6c969ed"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6f1f44bf-a065-4337-9292-6de39053e5d7"
+		Id = "de4c967a-43d8-4690-8afa-fe7a66f9291d"
+		ToItem = "A"
+		ToNode = "50a88c51-092e-45d3-85e4-0bd3e4e424cc"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "2911dd6a-c36e-41c8-9dee-1c2d80ace4fd"
+		Id = "dec24624-629f-486d-968c-57af9d074aa4"
+		ToItem = "B"
+		ToNode = "430cfde4-baa4-4b9d-8767-f14bc72cae57"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "430cfde4-baa4-4b9d-8767-f14bc72cae57"
+		Id = "e2dd3f42-537a-4f10-a9a4-41f230296e2e"
+		ToItem = "Vector"
+		ToNode = "02a985d9-189f-4ebb-a814-7d62bee95608"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "12d92ddf-e785-4b12-a68f-b1c5345a536b"
+		Id = "e33c0390-9c43-477e-a73f-b13540f8bb4d"
+		ToItem = "Y"
+		ToNode = "c8bb2d6b-35fe-4bf7-80fa-367ca6c969ed"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "584a32ff-8d26-49a5-9c6b-2527bf588dfb"
+		Id = "e8f30b2d-9c75-4531-baf4-4f5088b4c998"
+		ToItem = "A"
+		ToNode = "0da530a8-32de-4396-996f-dc7b53a2a219"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+		Id = "ecf6514c-13a7-4088-93a8-af6e8aa65397"
+		ToItem = "Numeric"
+		ToNode = "6f1f44bf-a065-4337-9292-6de39053e5d7"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Vector3"
+		FromNode = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
+		Id = "f7173ec4-93b9-4c99-96ec-e8cbd5e84d1a"
+		ToItem = "Vector"
+		ToNode = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "fda3bddc-98f0-425b-addf-80a10de7be65"
+		Id = "ef569f50-a6d7-4935-9b41-27c254e014af"
+		ToItem = "A"
+		ToNode = "430cfde4-baa4-4b9d-8767-f14bc72cae57"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Position"
+		FromNode = "fda3bddc-98f0-425b-addf-80a10de7be65"
+		Id = "be2226ce-b2dc-4373-8aca-d18d34dc1b13"
+		ToItem = "B"
+		ToNode = "b7f171a3-a193-41bb-8835-69b86d288b9f"
+		Type = "Vector3"
+	}
+]
+Groups = [
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "114dbd18-3dea-4e8e-80c6-be11f912991e"
+		Nodes = [
+			"bc9ef990-dcd8-4d88-83f0-7c6221c2740f"
+			"140f9814-52c5-41f8-bb03-749a2aa9e116"
+			"5eb3ea52-609c-4b26-a287-914c9bbf5a9e"
+			"4c20f186-5d5a-486d-9454-d64fd65bc3bd"
+			"6bde7fdf-bdc3-4bc5-8b4c-f9d7778c82c5"
+		]
+		Title = "Convert to X Position"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "2f56a5fe-69cb-4ef7-b137-0df57caabf0a"
+		Nodes = [
+			"e61e2543-d901-45e7-9f79-df93195f95f3"
+			"0da530a8-32de-4396-996f-dc7b53a2a219"
+			"f55a8b69-4047-4ff8-9c8b-58fbc5d321fa"
+			"12d92ddf-e785-4b12-a68f-b1c5345a536b"
+		]
+		Title = "Convert to Y Position"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "3eaaa200-f3be-494a-bece-6e74ab1cdf17"
+		Nodes = [
+			"56b522e2-daba-450c-82ce-85d6bf164fe6"
+		]
+		Title = "Phi"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "a6ef879d-45a6-48d8-bf78-b2344c02b66c"
+		Nodes = [
+			"430cfde4-baa4-4b9d-8767-f14bc72cae57"
+			"2911dd6a-c36e-41c8-9dee-1c2d80ace4fd"
+			"fda3bddc-98f0-425b-addf-80a10de7be65"
+			"02a985d9-189f-4ebb-a814-7d62bee95608"
+			"9c69bac8-7f86-4b11-84e1-fff7d4b9a922"
+		]
+		Title = "Set Camera Orbit Radius"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "bdea3e26-5ca0-4363-a1bb-d777d27e14b0"
+		Nodes = [
+			"6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+		]
+		Title = "Theta"
+	}
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "f35aafa2-d0b7-44cb-be04-e971cbae9078"
+		Nodes = [
+			"6f1f44bf-a065-4337-9292-6de39053e5d7"
+			"fc087674-7e38-4ad3-a7fe-84a57aa8bfe9"
+			"50a88c51-092e-45d3-85e4-0bd3e4e424cc"
+		]
+		Title = "Convert to Z Position"
+	}
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.VectorLength"
+		Id = "02a985d9-189f-4ebb-a814-7d62bee95608"
+		NodeLocation = {
+			X = 780
+			Y = 300
+		}
+		Value = {
+		}
+		Vector = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputUnit"
+		Id = "0d9c2e7e-ad57-40b2-921b-e5447701ac42"
+		Name = {
+			Value = "Target Unit In"
+		}
+		NodeLocation = {
+			X = -440
+			Y = 700
+		}
+		Unit = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.NumericTimesNumeric"
+		Id = "0da530a8-32de-4396-996f-dc7b53a2a219"
+		NodeLocation = {
+			X = 660
+			Y = 860
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.NumericTimesNumeric"
+		Id = "12d92ddf-e785-4b12-a68f-b1c5345a536b"
+		NodeLocation = {
+			X = 840
+			Y = 860
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Sin"
+		Id = "140f9814-52c5-41f8-bb03-749a2aa9e116"
+		NodeLocation = {
+			X = 480
+			Y = 660
+		}
+		Numeric = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.VectorMinusVector"
+		Id = "430cfde4-baa4-4b9d-8767-f14bc72cae57"
+		NodeLocation = {
+			X = 600
+			Y = 300
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetNumericVariable"
+		Id = "4c20f186-5d5a-486d-9454-d64fd65bc3bd"
+		Name = {
+			Value = "Radius"
+		}
+		NodeLocation = {
+			X = 660
+			Y = 680
+		}
+		Numeric = {
+		}
+		Scope = {
+			Value = "local"
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.NumericTimesNumeric"
+		Id = "50a88c51-092e-45d3-85e4-0bd3e4e424cc"
+		NodeLocation = {
+			X = 660
+			Y = 1140
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Changed = {
+		}
+		Class = "Stingray.Flow.Counter"
+		Decrease = {
+		}
+		Id = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+		Increase = {
+		}
+		Increment = {
+		}
+		NodeLocation = {
+			X = 120
+			Y = 1020
+		}
+		Reset = {
+		}
+		StartValue = {
+			Value = 60
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Sin"
+		Id = "584a32ff-8d26-49a5-9c6b-2527bf588dfb"
+		NodeLocation = {
+			X = 480
+			Y = 860
+		}
+		Numeric = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Camera = {
+		}
+		Class = "Stingray.Flow.SetCameraLocalPosition"
+		Id = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
+		In = {
+		}
+		NodeLocation = {
+			X = 1520
+			Y = 840
+		}
+		Out = {
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.NumericTimesNumeric"
+		Id = "5eb3ea52-609c-4b26-a287-914c9bbf5a9e"
+		NodeLocation = {
+			X = 660
+			Y = 580
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Changed = {
+		}
+		Class = "Stingray.Flow.Counter"
+		Decrease = {
+		}
+		Id = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+		Increase = {
+		}
+		Increment = {
+		}
+		NodeLocation = {
+			X = 120
+			Y = 760
+		}
+		Reset = {
+		}
+		StartValue = {
+			Value = 0
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.NumericTimesNumeric"
+		Id = "6bde7fdf-bdc3-4bc5-8b4c-f9d7778c82c5"
+		NodeLocation = {
+			X = 840
+			Y = 580
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "Camera Orbit Constraint In"
+		}
+		Id = "6d0ec5ca-37a3-4e55-ad58-47302295bdda"
+		NodeLocation = {
+			X = -440
+			Y = 780
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Cos"
+		Id = "6f1f44bf-a065-4337-9292-6de39053e5d7"
+		NodeLocation = {
+			X = 480
+			Y = 1140
+		}
+		Numeric = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.SetNumericVariable"
+		Id = "9c69bac8-7f86-4b11-84e1-fff7d4b9a922"
+		Name = {
+			Value = "Radius"
+		}
+		NodeLocation = {
+			X = 960
+			Y = 300
+		}
+		Numeric = {
+		}
+		Out = {
+		}
+		Scope = {
+			Value = "local"
+		}
+		Set = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.UpdateUnit"
+		Id = "a3c596ef-6209-43d6-a90d-ee1acfc6a1a7"
+		In = {
+		}
+		NodeLocation = {
+			X = 1720
+			Y = 820
+		}
+		Out = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.FlowSubroutine"
+		Disable = {
+		}
+		Enable = {
+		}
+		Flow = {
+			Value = "script/Camera_Aim_Constraint"
+		}
+		Id = "a6b7cc77-9538-43bd-a51e-28e4ba9c3a19"
+		InEvents = [
+			"Camera Aim Constraint In"
+		]
+		InVariableNames = [
+			"Target Unit In"
+		]
+		InVariables = [
+			{
+				Class = "Stingray.Flow.InVariableUnit"
+				UseMyUnit = false
+			}
+		]
+		NodeLocation = {
+			X = 1900
+			Y = 840
+		}
+		OutEvents = [
+		]
+		OutVariableNames = [
+		]
+		OutVariables = [
+		]
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.VectorComponents"
+		Id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		NodeLocation = {
+			X = -220
+			Y = 780
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Class = "Stingray.Flow.VectorPlusVector"
+		Id = "b7f171a3-a193-41bb-8835-69b86d288b9f"
+		NodeLocation = {
+			X = 1300
+			Y = 800
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Cos"
+		Id = "bc9ef990-dcd8-4d88-83f0-7c6221c2740f"
+		NodeLocation = {
+			X = 480
+			Y = 580
+		}
+		Numeric = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.VectorFromComponents"
+		Id = "c8bb2d6b-35fe-4bf7-80fa-367ca6c969ed"
+		NodeLocation = {
+			X = 1100
+			Y = 820
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Class = "Stingray.Flow.Sequence"
+		Id = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		In = {
+		}
+		NodeLocation = {
+			X = -220
+			Y = 920
+		}
+		Out1 = {
+		}
+		Out2 = {
+		}
+		Out3 = {
+		}
+		Out4 = {
+		}
+		Out5 = {
+		}
+		Out6 = {
+		}
+		Out7 = {
+		}
+		Out8 = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Once"
+		Id = "e43f0e08-f2e0-4696-9f77-568c516072f2"
+		In = {
+		}
+		NodeLocation = {
+			X = 220
+			Y = 480
+		}
+		Out = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.Sin"
+		Id = "e61e2543-d901-45e7-9f79-df93195f95f3"
+		NodeLocation = {
+			X = 480
+			Y = 940
+		}
+		Numeric = {
+		}
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputVector3"
+		Id = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
+		Name = {
+			Value = "Input Control In"
+		}
+		NodeLocation = {
+			X = -440
+			Y = 540
+		}
+		Vector3 = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetNumericVariable"
+		Id = "f55a8b69-4047-4ff8-9c8b-58fbc5d321fa"
+		Name = {
+			Value = "Radius"
+		}
+		NodeLocation = {
+			X = 660
+			Y = 960
+		}
+		Numeric = {
+		}
+		Scope = {
+			Value = "local"
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputUnit"
+		Id = "fb7cc417-04ef-4cb9-a01f-0ef4a4c2a33d"
+		Name = {
+			Value = "Camera Unit In"
+		}
+		NodeLocation = {
+			X = -440
+			Y = 620
+		}
+		Unit = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetNumericVariable"
+		Id = "fc087674-7e38-4ad3-a7fe-84a57aa8bfe9"
+		Name = {
+			Value = "Radius"
+		}
+		NodeLocation = {
+			X = 480
+			Y = 1240
+		}
+		Numeric = {
+		}
+		Scope = {
+			Value = "local"
+		}
+		Width = 160
+	}
+	{
+		Camera = {
+		}
+		Class = "Stingray.Flow.GetCameraWorldPosition"
+		Id = "2911dd6a-c36e-41c8-9dee-1c2d80ace4fd"
+		NodeLocation = {
+			X = 400
+			Y = 260
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.GetUnitWorldPosition"
+		Id = "fda3bddc-98f0-425b-addf-80a10de7be65"
+		NodeLocation = {
+			X = 400
+			Y = 360
+		}
+		Object = {
+		}
+		Position = {
+		}
+		Unit = {
+			UseMyUnit = false
+		}
+		Width = 160
+	}
+]

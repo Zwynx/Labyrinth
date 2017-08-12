@@ -1,0 +1,42 @@
+
+_data_root_version = 2
+_id = "cd0a9514-cf8b-4b76-986b-2bd8a19b1a2e"
+_name = "content/models/Servo/animations/Servo_Run"
+anim_skeleton_ref = {
+	_id = "92db167c-4351-4b5c-85d5-50d4981ad864"
+	ref_filename = "content/models/Servo/Servo.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "a8a7dcba-a722-4881-b1f1-911b1cd57449"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "1c1aebad-2256-4c6c-8ee5-fc40718909d1"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "27d2f229-2152-4e8a-85da-edb3a47be40e"
+	ref_filename = "content/models/Servo/animations/Servo_Run.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "f59bd6ff-2914-4395-baaf-ef5f748813da"
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Run"

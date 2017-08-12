@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "Collision"
+		node = "platform_geo"
+		shapes = [
+			{
+				material = "default"
+				shape = "platform_geo"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "static"
+	}
+]

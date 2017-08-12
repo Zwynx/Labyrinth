@@ -1,0 +1,42 @@
+
+_data_root_version = 2
+_id = "aae00674-9db6-4455-9bd0-ec3fb5e8c685"
+_name = "content/models/Servo/animations/Servo_Idle"
+anim_skeleton_ref = {
+	_id = "c0c9277d-62b4-44bb-ae44-d3a491991e61"
+	ref_filename = "content/models/Servo/Servo.anim_skeleton"
+	ref_id = null
+}
+autostep = {
+	_id = "b37ddd34-566b-4fcc-8e25-c50cd1065e35"
+	autostep = false
+	rotation = 0.174532925199433
+	translation = 1
+}
+base_offset_preview_animation_clip_ref = {
+	_id = "896e2156-fedc-4a87-9712-891de0cb3c10"
+	ref_filename = null
+	ref_id = null
+}
+beats = [
+]
+custom_compression_settings = [
+]
+dcc_asset_ref = {
+	_id = "b79a1a4e-b6b7-4f7a-8795-2ec9c3c7ffce"
+	ref_filename = "content/models/Servo/animations/Servo_Idle.dcc_asset"
+	ref_id = null
+}
+flow_events = [
+]
+global_compression_settings = {
+	_id = "8bcb8817-a306-440c-a57d-d5f65e3552bd"
+	do_pack_positions = true
+	do_pack_rotations = true
+	do_pack_scales = true
+	position_tolerance = 0.001
+	rotation_tolerance = 0.001
+	scale_tolerance = 0.001
+}
+offset_animation = false
+take_name = "Idle"

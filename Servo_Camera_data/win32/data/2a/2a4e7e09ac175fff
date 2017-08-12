@@ -1,0 +1,52 @@
+
+boot_package = "boot"
+boot_script = "core/appkit/lua/main"
+error_levels = {
+	fallback_resource_package = "core/fallback_resources/fallback_resources"
+	missing_material = "warning"
+	missing_resources = {
+		flow = {
+			fallback_resource = "core/fallback_resources/missing_flow"
+		}
+		material = {
+			fallback_resource = "core/fallback_resources/missing_material"
+		}
+		shader = {
+			fallback_resource = "missing_shader"
+		}
+		texture = {
+			fallback_resource = "core/fallback_resources/missing_texture"
+		}
+		unit = {
+			fallback_resource = "core/fallback_resources/missing_unit"
+		}
+	}
+	semantic_mismatch = "warning"
+}
+import_reverse_forward_axis = true
+performance_hud = "core/performance_hud/performance_hud"
+project_name = "Servo_Camera"
+render_config = "core/stingray_renderer/renderer"
+stingray_version = "1.2.564.5"
+win32 = {
+	floating_point_exceptions = true
+	render_settings = {
+	}
+	renderer = {
+		adapter_index = 0
+		aspect_ratio = -1
+		d3d_debug = false
+		fullscreen = false
+		fullscreen_output = 0
+		screen_resolution = [
+			1280
+			720
+		]
+	}
+	window_name = "Stingray Empty Project"
+}
+wwise = {
+	data_dir = "content/audio"
+	enabled = true
+}
+wwise_project = "../Servo_Camera_wwise/Servo_Camera.wproj"

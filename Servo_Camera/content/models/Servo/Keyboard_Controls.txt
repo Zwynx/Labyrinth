@@ -1,0 +1,338 @@
+
+Connections = [
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "ebd3c8a2-d95a-4f0e-abd1-20aa4186ea84"
+		ToItem = "B"
+		ToNode = "b86f969a-18ee-4ae5-85bc-e19964934fb0"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "f39de6a9-8c57-4bdf-9356-e92dedc0c81f"
+		ToItem = "A"
+		ToNode = "aaadeb48-1945-40f8-983c-4191440cf6ce"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "c3cddab8-9c71-4c77-8fa2-2746e90e3184"
+		ToItem = "A"
+		ToNode = "ebd3c8a2-d95a-4f0e-abd1-20aa4186ea84"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "f194e550-a384-4576-ad2c-745f401ff44a"
+		ToItem = "B"
+		ToNode = "aaadeb48-1945-40f8-983c-4191440cf6ce"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "b86f969a-18ee-4ae5-85bc-e19964934fb0"
+		ToItem = "Y"
+		ToNode = "bf9c620a-587b-4584-a5fc-b7a766596242"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "2698131a-4d68-4bf7-85fe-68ab9fa80dca"
+		ToItem = "A"
+		ToNode = "b86f969a-18ee-4ae5-85bc-e19964934fb0"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Vector"
+		FromNode = "bf9c620a-587b-4584-a5fc-b7a766596242"
+		ToItem = "A"
+		ToNode = "6cf552ff-7b40-4cde-9601-b21dd62dd99b"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "aaadeb48-1945-40f8-983c-4191440cf6ce"
+		ToItem = "X"
+		ToNode = "bf9c620a-587b-4584-a5fc-b7a766596242"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "78034e83-1105-44d4-82bd-5d0937e27543"
+		ToItem = "A"
+		ToNode = "f194e550-a384-4576-ad2c-745f401ff44a"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Foundation.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "6cf552ff-7b40-4cde-9601-b21dd62dd99b"
+		ToItem = "Vector"
+		ToNode = "cc50bbaa-558c-4a87-b387-5f2b47c88494"
+		Type = "Vector3"
+	}
+]
+Groups = [
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "dc8d0b24-0b57-49a6-92dc-3697671746db"
+		Nodes = [
+			"2698131a-4d68-4bf7-85fe-68ab9fa80dca"
+			"c3cddab8-9c71-4c77-8fa2-2746e90e3184"
+			"78034e83-1105-44d4-82bd-5d0937e27543"
+			"f39de6a9-8c57-4bdf-9356-e92dedc0c81f"
+			"ebd3c8a2-d95a-4f0e-abd1-20aa4186ea84"
+			"aaadeb48-1945-40f8-983c-4191440cf6ce"
+			"f194e550-a384-4576-ad2c-745f401ff44a"
+			"b86f969a-18ee-4ae5-85bc-e19964934fb0"
+			"bf9c620a-587b-4584-a5fc-b7a766596242"
+		]
+		Title = "Keyboard Controls"
+	}
+]
+Nodes = [
+	{
+		Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+		ButtonName = {
+			Value = "up"
+		}
+		Class = "Stingray.Foundation.Flow.KeyboardButton"
+		Device = {
+			Value = "keyboard"
+		}
+		DeviceNumber = {
+			Value = 0
+		}
+		Held = {
+		}
+		Id = "2698131a-4d68-4bf7-85fe-68ab9fa80dca"
+		NodeLocation = {
+			X = 414
+			Y = -782
+		}
+		Pressed = {
+		}
+		Released = {
+		}
+		Title = "Keyboard Button"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+		ButtonName = {
+			Value = "down"
+		}
+		Class = "Stingray.Foundation.Flow.KeyboardButton"
+		Device = {
+			Value = "keyboard"
+		}
+		DeviceNumber = {
+			Value = 0
+		}
+		Held = {
+		}
+		Id = "c3cddab8-9c71-4c77-8fa2-2746e90e3184"
+		NodeLocation = {
+			X = 414
+			Y = -642
+		}
+		Pressed = {
+		}
+		Released = {
+		}
+		Title = "Keyboard Button"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+		ButtonName = {
+			Value = "left"
+		}
+		Class = "Stingray.Foundation.Flow.KeyboardButton"
+		Device = {
+			Value = "keyboard"
+		}
+		DeviceNumber = {
+			Value = 0
+		}
+		Held = {
+		}
+		Id = "78034e83-1105-44d4-82bd-5d0937e27543"
+		NodeLocation = {
+			X = 414
+			Y = -362
+		}
+		Pressed = {
+		}
+		Released = {
+		}
+		Title = "Keyboard Button"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+		ButtonName = {
+			Value = "right"
+		}
+		Class = "Stingray.Foundation.Flow.KeyboardButton"
+		Device = {
+			Value = "keyboard"
+		}
+		DeviceNumber = {
+			Value = 0
+		}
+		Held = {
+		}
+		Id = "f39de6a9-8c57-4bdf-9356-e92dedc0c81f"
+		NodeLocation = {
+			X = 414
+			Y = -502
+		}
+		Pressed = {
+		}
+		Released = {
+		}
+		Title = "Keyboard Button"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+			Value = -1
+		}
+		Brief = "Returns a numeric value that represents the product of A and B."
+		Class = "Stingray.Foundation.Flow.NumericTimesNumeric"
+		Id = "ebd3c8a2-d95a-4f0e-abd1-20aa4186ea84"
+		NodeLocation = {
+			X = 614
+			Y = -602
+		}
+		Title = "Multiplication"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Brief = "Logical operation that adds two floats together. Returns the same of those floats."
+		Class = "Stingray.Foundation.Flow.NumericPlusNumeric"
+		Id = "aaadeb48-1945-40f8-983c-4191440cf6ce"
+		NodeLocation = {
+			X = 814
+			Y = -462
+		}
+		Title = "Addition"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+			Value = -1
+		}
+		Brief = "Returns a numeric value that represents the product of A and B."
+		Class = "Stingray.Foundation.Flow.NumericTimesNumeric"
+		Id = "f194e550-a384-4576-ad2c-745f401ff44a"
+		NodeLocation = {
+			X = 614
+			Y = -322
+		}
+		Title = "Multiplication"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Brief = "Logical operation that adds two floats together. Returns the same of those floats."
+		Class = "Stingray.Foundation.Flow.NumericPlusNumeric"
+		Id = "b86f969a-18ee-4ae5-85bc-e19964934fb0"
+		NodeLocation = {
+			X = 814
+			Y = -742
+		}
+		Title = "Addition"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Brief = "Constructs a vector from three separate X, Y and Z numeric components."
+		Class = "Stingray.Foundation.Flow.VectorFromComponents"
+		Id = "bf9c620a-587b-4584-a5fc-b7a766596242"
+		NodeLocation = {
+			X = 1014
+			Y = -562
+		}
+		Title = "Vector From Components"
+		Vector = {
+		}
+		Width = 200
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		A = {
+		}
+		B = {
+		}
+		Brief = "Returns the sum of two vectors."
+		Class = "Stingray.Foundation.Flow.VectorPlusVector"
+		Id = "6cf552ff-7b40-4cde-9601-b21dd62dd99b"
+		NodeLocation = {
+			X = 1254
+			Y = -582
+		}
+		Title = "Addition"
+		Value = {
+		}
+		Width = 160
+	}
+	{
+		Brief = "Makes the specified vector have a length of 1."
+		Class = "Stingray.Foundation.Flow.Normalize"
+		Id = "cc50bbaa-558c-4a87-b387-5f2b47c88494"
+		NodeLocation = {
+			X = 1454
+			Y = -582
+		}
+		Title = "Normalize"
+		Value = {
+		}
+		Vector = {
+		}
+		Width = 160
+	}
+]

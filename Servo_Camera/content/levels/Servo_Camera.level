@@ -1,0 +1,4094 @@
+
+editor_metadata = {
+	Entities = [
+		{
+			id = "dcb89479-10f7-416f-a64e-c505e2670114"
+			layer = "Default"
+			name = "midday_shading_environment"
+			prefab = {
+				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+				"$resource_type" = "entity"
+			}
+		}
+	]
+	Flow = {
+		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+				ToItem = "Camera 1 Unit In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "f4b3d332-eb39-4cc4-a110-212608671d51"
+				ToItem = "Camera 2 Unit In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "417ea3e2-6884-4bf2-bdf2-cd2017067334"
+				ToItem = "Camera 3 Unit In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "1ef2e10e-c918-420f-bf31-cba750974134"
+				Priority = 0
+				ToItem = "Camera Switcher In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+				ToItem = "Target Unit In"
+				ToNode = "05b03018-24b0-4c9e-a717-83667bab1adf"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+				ToItem = "Camera Unit In"
+				ToNode = "05b03018-24b0-4c9e-a717-83667bab1adf"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "47f8cd52-db44-4672-99f8-c772f5f58263"
+				Priority = 0
+				ToItem = "Camera Aim Constraint In"
+				ToNode = "99138272-1481-48f9-ac0b-cac98b718f02"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+				ToItem = "Target Unit In"
+				ToNode = "99138272-1481-48f9-ac0b-cac98b718f02"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "392b45ff-3d1b-4694-98c2-493e7a1e2a4e"
+				ToItem = "Input Control In"
+				ToNode = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+				Type = "Vector3"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+				ToItem = "Target Unit In"
+				ToNode = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+				ToItem = "Camera Unit In"
+				ToNode = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "47f8cd52-db44-4672-99f8-c772f5f58263"
+				Priority = 0
+				ToItem = "Camera Orbit Constraint In"
+				ToNode = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Released"
+				FromNode = "64005816-73c0-47cf-9e30-c5eebddf0ad2"
+				Priority = 0
+				ToItem = "Spawn"
+				ToNode = "afcd5154-05c6-4f6b-b6da-51b554638246"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "fe3e2e11-b11f-4d6e-93aa-958785a612e5"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "96e33031-db4d-482c-8429-6c6ddacd98b7"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "bf50b07f-5d98-4287-b23e-8082038d9d42"
+				Priority = 0
+				ToItem = "Set"
+				ToNode = "832b2c3a-732d-4e91-938f-c0d1d4a30f66"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Released"
+				FromNode = "40aec098-0450-484a-8edd-fbdd7ab9ae69"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "859328b3-1c32-4dbe-b90c-6a36ead6751b"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "String"
+				FromNode = "135178ce-d8a3-4319-8469-f211e7bb5fa9"
+				ToItem = "Text"
+				ToNode = "859328b3-1c32-4dbe-b90c-6a36ead6751b"
+				Type = "String"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Released"
+				FromNode = "ca222cfe-5e09-4911-a712-821ca7633d9e"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out1"
+				FromNode = "2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+				Priority = 0
+				ToItem = "Set"
+				ToNode = "fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "String"
+				FromNode = "0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+				ToItem = "String"
+				ToNode = "fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29"
+				Type = "String"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "String"
+				FromNode = "0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+				ToItem = "String"
+				ToNode = "56197fb9-8a13-4405-b6e1-9bd74a976fe8"
+				Type = "String"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out2"
+				FromNode = "2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "8e122a5f-6f72-4c9f-993c-363e18f34884"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "String"
+				FromNode = "dc26d45e-f871-4fa1-8d32-7e53f14d0e3c"
+				ToItem = "Text"
+				ToNode = "8e122a5f-6f72-4c9f-993c-363e18f34884"
+				Type = "String"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Value"
+				FromNode = "9b579900-b300-4f5b-9610-013f1432fd0d"
+				ToItem = "Arg1"
+				ToNode = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+				Type = "String"
+			}
+		]
+		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "cbeb173f-5281-4b2d-ba78-db61d54a885b"
+				Nodes = [
+					"99138272-1481-48f9-ac0b-cac98b718f02"
+				]
+				Title = "Camera Aim Constraint (LookAt)"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "e0458606-f51b-4926-8eaf-dca5f990bfb7"
+				Nodes = [
+					"05b03018-24b0-4c9e-a717-83667bab1adf"
+				]
+				Title = "Camera Position Constraints"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "91cf75e7-6420-4a99-aa43-537e01c1f868"
+				Nodes = [
+					"c847592e-ea12-40f8-98b6-9dbee4b1367e"
+				]
+				Title = "Camera Orbit Constraint"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "8652be84-0910-41be-a691-b8d44bed3d56"
+				Nodes = [
+					"fe3e2e11-b11f-4d6e-93aa-958785a612e5"
+					"96e33031-db4d-482c-8429-6c6ddacd98b7"
+				]
+				Title = "Trigger from lua"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "f3afe67a-27f8-4abf-b605-b77e77084a9e"
+				Nodes = [
+					"bf50b07f-5d98-4287-b23e-8082038d9d42"
+					"832b2c3a-732d-4e91-938f-c0d1d4a30f66"
+					"135178ce-d8a3-4319-8469-f211e7bb5fa9"
+					"40aec098-0450-484a-8edd-fbdd7ab9ae69"
+					"859328b3-1c32-4dbe-b90c-6a36ead6751b"
+				]
+				Title = "Store Flow Variable"
+			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "3465b703-4eb7-4d78-8307-fb73c9fa9b3c"
+				Nodes = [
+					"ca222cfe-5e09-4911-a712-821ca7633d9e"
+					"2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+					"2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+					"fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29"
+					"0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+					"8e122a5f-6f72-4c9f-993c-363e18f34884"
+					"56197fb9-8a13-4405-b6e1-9bd74a976fe8"
+					"dc26d45e-f871-4fa1-8d32-7e53f14d0e3c"
+				]
+				Title = "Set & Get Flow Variable from Lua"
+			}
+		]
+		Nodes = [
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Class = "Stingray.Foundation.Flow.LevelLoaded"
+				Id = "1ef2e10e-c918-420f-bf31-cba750974134"
+				NodeLocation = {
+					X = -740
+					Y = -920
+				}
+				Out = {
+				}
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -740
+					Y = -1160
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "458682e9-77ed-478f-a432-8fb48796ef06"
+				}
+				Title = "Level Unit"
+				Type = "core/units/camera"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "f4b3d332-eb39-4cc4-a110-212608671d51"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -740
+					Y = -1080
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "e965d18f-3d99-47fb-a30e-637218db270f"
+				}
+				Title = "Level Unit"
+				Type = "core/units/camera"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "c"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "64005816-73c0-47cf-9e30-c5eebddf0ad2"
+				NodeLocation = {
+					X = -740
+					Y = -860
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/Camera_Switcher"
+				}
+				Id = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+				InEvents = [
+					"Camera Switcher In"
+				]
+				InVariableNames = [
+					"Camera 1 Unit In"
+					"Camera 2 Unit In"
+					"Camera 3 Unit In"
+					"Camera 4 Unit In"
+					"Camera Amount In"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableFloat"
+						Value = 3
+					}
+				]
+				NodeLocation = {
+					X = -480
+					Y = -1000
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "417ea3e2-6884-4bf2-bdf2-cd2017067334"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -740
+					Y = -1000
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "9881c4ab-3ec9-436d-accb-5508721d6460"
+				}
+				Title = "Level Unit"
+				Type = "core/units/camera"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Passes an event at every update interval of the engine."
+				Class = "Stingray.Foundation.Flow.LevelUpdate"
+				Id = "47f8cd52-db44-4672-99f8-c772f5f58263"
+				NodeLocation = {
+					X = -740
+					Y = -680
+				}
+				Out = {
+				}
+				Title = "Level Update"
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/Camera_Position_Constraint"
+				}
+				Id = "05b03018-24b0-4c9e-a717-83667bab1adf"
+				InEvents = [
+					"Camera Position Constraint In"
+				]
+				InVariableNames = [
+					"Camera Unit In"
+					"Enable Aim Constraint In"
+					"Target Unit In"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableBoolean"
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+				]
+				NodeLocation = {
+					X = 0
+					Y = -720
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 360
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/Camera_Aim_Constraint"
+				}
+				Id = "99138272-1481-48f9-ac0b-cac98b718f02"
+				InEvents = [
+					"Camera Aim Constraint In"
+				]
+				InVariableNames = [
+					"Target Unit In"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+				]
+				NodeLocation = {
+					X = 0
+					Y = -1060
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 420
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -340
+					Y = -580
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "34a5aed3-3be0-4b98-ac02-d2b49f7c8291"
+				}
+				Title = "Level Unit"
+				Type = "content/models/Servo/Servo"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/Camera_Orbit_Stuff"
+				}
+				Id = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+				InEvents = [
+					"Camera Orbit Constraint In"
+				]
+				InVariableNames = [
+					"Camera Unit In"
+					"Input Control In"
+					"Target Unit In"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableVector3"
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+				]
+				NodeLocation = {
+					X = 0
+					Y = -460
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 160
+			}
+			{
+				AxisName = {
+					Value = "right"
+				}
+				Brief = "Allows the user to specify whether to use the left or right thumbstick of an Xbox controller."
+				Class = "Stingray.Foundation.Flow.XboxAxis"
+				Device = {
+					Value = "pad"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Id = "392b45ff-3d1b-4694-98c2-493e7a1e2a4e"
+				NodeLocation = {
+					X = -340
+					Y = -460
+				}
+				Out = {
+				}
+				Title = "Xbox Thumbstick"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Spawns the unit at a specified position."
+				Class = "Stingray.Foundation.Flow.SpawnUnitPositionRotation"
+				Id = "afcd5154-05c6-4f6b-b6da-51b554638246"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -740
+					Y = -620
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Position = {
+					Value = "0 0 0.01"
+				}
+				Rotation = {
+				}
+				Spawn = {
+				}
+				Spawned = {
+				}
+				SpawnedUnit = {
+				}
+				Title = "Spawn Unit on Position"
+				Unit = {
+					Value = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+				}
+				Unspawn = {
+				}
+				Unspawned = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Text"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "Boom!"
+						}
+					}
+					{
+						RawName = "Label"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Color"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+				]
+				Brief = "Prints the combined label and text on the screen."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "96e33031-db4d-482c-8429-6c6ddacd98b7"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Print To Screen"
+				NodeLocation = {
+					X = -1040
+					Y = -1360
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Exposes an input port of type event for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalEvent"
+				EventName = {
+					Value = "explosion"
+				}
+				Id = "fe3e2e11-b11f-4d6e-93aa-958785a612e5"
+				NodeLocation = {
+					X = -1280
+					Y = -1340
+				}
+				Out = {
+				}
+				Title = "External In Event"
+				Width = 160
+			}
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Class = "Stingray.Foundation.Flow.LevelLoaded"
+				Id = "bf50b07f-5d98-4287-b23e-8082038d9d42"
+				NodeLocation = {
+					X = -1280
+					Y = -1140
+				}
+				Out = {
+				}
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Brief = "Sets a variable to the specified string value."
+				Class = "Stingray.Foundation.Flow.SetStringVariable"
+				Id = "832b2c3a-732d-4e91-938f-c0d1d4a30f66"
+				Name = {
+					Value = "flowVariable"
+				}
+				NodeLocation = {
+					X = -1040
+					Y = -1140
+				}
+				Out = {
+				}
+				Scope = {
+					Value = "local"
+				}
+				Set = {
+				}
+				String = {
+					Value = "NOEEP"
+				}
+				Title = "Set String Variable"
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "b"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "40aec098-0450-484a-8edd-fbdd7ab9ae69"
+				NodeLocation = {
+					X = -1280
+					Y = -980
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Text"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Label"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "Flow Variable: "
+						}
+					}
+					{
+						RawName = "Color"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+				]
+				Brief = "Prints the combined label and text on the screen."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "859328b3-1c32-4dbe-b90c-6a36ead6751b"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Print To Screen"
+				NodeLocation = {
+					X = -1040
+					Y = -1000
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Returns the current string value of the specified named variable."
+				Class = "Stingray.Foundation.Flow.GetStringVariable"
+				Id = "135178ce-d8a3-4319-8469-f211e7bb5fa9"
+				Name = {
+					Value = "flowVariable"
+				}
+				NodeLocation = {
+					X = -1280
+					Y = -1080
+				}
+				Scope = {
+					Value = "local"
+				}
+				String = {
+				}
+				Title = "Get String Variable"
+				Width = 160
+			}
+			{
+				Arg1 = {
+				}
+				Arg2 = {
+				}
+				Arg3 = {
+				}
+				Arg4 = {
+				}
+				Arg5 = {
+				}
+				Brief = "Node that calls a script function with a table. Arguments are defined by a .script_flow_nodes file."
+				Class = "Stingray.Foundation.Flow.ScriptCallGlobal"
+				Function = {
+					Value = "Project.CallFromFlow"
+				}
+				Id = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+				In = {
+				}
+				NodeLocation = {
+					X = -1720
+					Y = -580
+				}
+				Out = {
+				}
+				Title = "Script Call Global"
+				Width = 220
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "n"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "ca222cfe-5e09-4911-a712-821ca7633d9e"
+				NodeLocation = {
+					X = -1920
+					Y = -580
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Allows for a single event pin to execute multiple event pins in order."
+				Class = "Stingray.Foundation.Flow.Sequence"
+				Id = "2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+				In = {
+				}
+				NodeLocation = {
+					X = -1460
+					Y = -580
+				}
+				Out1 = {
+				}
+				Out2 = {
+				}
+				Out3 = {
+				}
+				Out4 = {
+				}
+				Out5 = {
+				}
+				Out6 = {
+				}
+				Out7 = {
+				}
+				Out8 = {
+				}
+				Title = "Sequence"
+				Width = 160
+			}
+			{
+				Brief = "Sets a variable to the specified string value."
+				Class = "Stingray.Foundation.Flow.SetStringVariable"
+				Id = "fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29"
+				Name = {
+					Value = "flowVariable"
+				}
+				NodeLocation = {
+					X = -1220
+					Y = -680
+				}
+				Out = {
+				}
+				Scope = {
+					Value = "local"
+				}
+				Set = {
+				}
+				String = {
+				}
+				Title = "Set String Variable"
+				Width = 160
+			}
+			{
+				Brief = "Exposes an input port of type string for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalInputString"
+				Id = "0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+				Name = {
+					Value = "in_flowvariable"
+				}
+				NodeLocation = {
+					X = -1500
+					Y = -680
+				}
+				String = {
+				}
+				Title = "External Input String"
+				Width = 200
+			}
+			{
+				Brief = "Exposes an output port of type string for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalOutputString"
+				Id = "56197fb9-8a13-4405-b6e1-9bd74a976fe8"
+				Name = {
+					Value = "out_flowvariable"
+				}
+				NodeLocation = {
+					X = -1220
+					Y = -760
+				}
+				String = {
+				}
+				Title = "External Output String"
+				Width = 220
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Text"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Label"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Color"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+				]
+				Brief = "Prints the combined label and text on the screen."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "8e122a5f-6f72-4c9f-993c-363e18f34884"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Print To Screen"
+				NodeLocation = {
+					X = -1020
+					Y = -580
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Returns the current string value of the specified named variable."
+				Class = "Stingray.Foundation.Flow.GetStringVariable"
+				Id = "dc26d45e-f871-4fa1-8d32-7e53f14d0e3c"
+				Name = {
+					Value = "flowVariable"
+				}
+				NodeLocation = {
+					X = -1220
+					Y = -540
+				}
+				Scope = {
+					Value = "local"
+				}
+				String = {
+				}
+				Title = "Get String Variable"
+				Width = 160
+			}
+			{
+				Brief = "Creates a string constant."
+				Class = "Stingray.Foundation.Flow.StringData"
+				Id = "9b579900-b300-4f5b-9610-013f1432fd0d"
+				NodeLocation = {
+					X = -1920
+					Y = -680
+				}
+				Set = {
+					Value = "Argumenting"
+				}
+				Title = "String Data"
+				Value = {
+				}
+				Width = 160
+			}
+		]
+	}
+	Groups = [
+	]
+	Layers = [
+		"Default"
+		"Background"
+	]
+	LevelObjectSets = {
+		NestedSetNamesBySetName = {
+		}
+		ObjectIdsBySetName = {
+		}
+		VisibleSetNames = [
+		]
+	}
+	LevelReferences = [
+	]
+	LightBakeSettings = {
+		Baker = "Beast"
+		ExcludedObjectSets = [
+		]
+		FilterGain = 20
+		FilterType = "Both"
+		IlluminationType = "Both"
+		Layers = [
+		]
+		LightmapType = "Standard"
+		MaxSamples = 96
+		MinSamples = 32
+		QualityPreset = "Low"
+		SkylightIntensityRGB = {
+			X = 1
+			Y = 1
+			Z = 1
+		}
+		TexelScale = 10
+		TotalPasses = 256
+		Variance = 0.5
+	}
+	LuaPluginObjects = [
+	]
+	Navmeshes = [
+	]
+	Notes = [
+	]
+	ParticleEffects = [
+	]
+	PositionMarkers = [
+	]
+	Prototypes = [
+	]
+	Scatter = {
+		PoolSettings = {
+		}
+		ScatterData = {
+		}
+	}
+	Settings = {
+		FrozenLayers = [
+			"Background"
+		]
+		HiddenLayers = [
+		]
+		HiddenObjects = [
+		]
+		LastHiddenObjects = [
+		]
+		SoundEnvironment = ""
+		TimpaniSoundEnvironment = "default"
+	}
+	Sounds = [
+	]
+	Splines = [
+	]
+	Stories = [
+	]
+	Triggers = [
+	]
+	Units = [
+		{
+			Cameras = {
+			}
+			Id = "1bb2346b-e579-4892-a7dc-589a938d6c78"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 2
+					Material = ""
+					MaterialResource = ""
+					ShadowDepthBias = 0.4
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "directional"
+				}
+			}
+			Material = "core/units/light_source"
+			Materials = {
+			}
+			Name = "light_source"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 7.5
+			}
+			Rot = {
+				W = -0.707107
+				X = 0.5
+				Y = -0.5
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "34a5aed3-3be0-4b98-ac02-d2b49f7c8291"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Servo"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0.062
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 2
+				Y = 2
+				Z = 2
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Servo/Servo"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4f1e01dc-8092-4a77-9b57-4879a4d5a804"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cd6eb2fe-af46-4fc0-983e-efff9323ad03"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 10
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 8.94896662497055E-10
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e81fea46-a7ad-47bf-907e-6fa1f385d74c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -10
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = 0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "30b56380-7a82-4bfb-b1d5-2e32f4662eb7"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "82d78a6f-a527-4e49-93cb-a6dce6cdfa92"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 20
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c55be6c4-c89f-4587-ba4f-da7534fb102a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 20
+				Y = 10
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = 0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3d9f197e-b4dd-4dc3-834a-73468d4d8fad"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 10
+				Y = 10
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c6f6afb5-0100-4bb4-88c3-58e18d6239e3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 10
+				Z = 0
+			}
+			Rot = {
+				W = 8.94896662497055E-10
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dbd3aebd-2e02-4e17-8168-c7b21ac39ce9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -10
+				Y = 10
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f06b4e63-34e5-4142-9ede-72bc00389faf"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20
+				Y = 10
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = 0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "58fcd9c4-a33b-47a3-a75e-d057691152ac"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform10"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 20
+				Y = 20
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ad018840-1b53-4d66-864b-00d3920d761f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform11"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 10
+				Y = 20
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = 0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d91ed496-1bd4-492b-bc96-df6b4165192a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform12"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 20
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5bc6aa06-9f37-4769-9a86-189f0e760a31"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform13"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -10
+				Y = 20
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = 0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "25c301b6-a0fd-401c-b4a6-a8938a4f0e0e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform14"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20
+				Y = 20
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1e6b4828-1cd0-4ae0-ab4f-2cc24c0e2b4d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform15"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 20
+				Y = -10
+				Z = 0
+			}
+			Rot = {
+				W = 8.94896662497055E-10
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ac780f75-e144-46a0-9b79-4eb6b6c5b4bf"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform16"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 10
+				Y = -10
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a7a82ad6-3826-4ce4-9815-81cd6bf3b2dc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform17"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -10
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = -0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d7fa44ad-726f-4620-bccc-57296801d5b1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform18"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -10
+				Y = -10
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "49f6eb24-2c44-4152-82c7-1dc5519983fc"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform19"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20
+				Y = -10
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = -0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2f513703-ae80-4a2e-9253-213531255fbb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform20"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 20
+				Y = -20
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3f525952-6bf4-4f57-9356-d938fa81ceea"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform21"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 10
+				Y = -20
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = -0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c2fa1d8c-3c38-47c7-8970-e0d370de93f0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform22"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -20
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "10feec14-ccbe-44f3-b97e-b9f5f1c23656"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform23"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -10
+				Y = -20
+				Z = 0
+			}
+			Rot = {
+				W = 0.707106781502941
+				X = 0
+				Y = 0
+				Z = -0.707106780870154
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ba9de463-6775-44f6-a488-9d2506af30c9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Platform24"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -20
+				Y = -20
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Platforms/Platform"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e34718d7-5593-4fc8-82f2-5b66af3d33ad"
+			Layer = "Background"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Skydome"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/editor_slave/units/skydome/skydome"
+		}
+		{
+			Cameras = {
+			}
+			Id = "458682e9-77ed-478f-a432-8fb48796ef06"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "camera"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -0.257993
+				Y = -10.52088
+				Z = 7.356603
+			}
+			Rot = {
+				W = -0.99771
+				X = 0.067449
+				Y = -0.000343
+				Z = 0.005082
+			}
+			Scl = {
+				X = 1.000029
+				Y = 1.000034
+				Z = 1.000003
+			}
+			ScriptData = {
+			}
+			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "e965d18f-3d99-47fb-a30e-637218db270f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "camera1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -33.028706
+				Y = 27.264565
+				Z = 26.310474
+			}
+			Rot = {
+				W = -0.376027
+				X = 0.090826
+				Y = -0.216509
+				Z = 0.896369
+			}
+			Scl = {
+				X = 1.000013
+				Y = 1.000012
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "9881c4ab-3ec9-436d-accb-5508721d6460"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "camera2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -14.780991
+				Y = 8.657851
+				Z = 0.038691
+			}
+			Rot = {
+				W = -0.483623
+				X = -0.073834
+				Y = 0.131627
+				Z = 0.862167
+			}
+			Scl = {
+				X = 1.000016
+				Y = 1.000034
+				Z = 1.000001
+			}
+			ScriptData = {
+			}
+			Type = "core/units/camera"
+		}
+	]
+	Volumes = [
+	]
+}
+entities = [
+	{
+		id = "dcb89479-10f7-416f-a64e-c505e2670114"
+		name = "midday_shading_environment"
+		prefab = {
+			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+			"$resource_type" = "entity"
+		}
+	}
+]
+flow = {
+	nodes = [
+		{
+			id = "1ef2e10e-c918-420f-bf31-cba750974134"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "c2dda51b-b394-407f-929c-8371ae30f2f5:0"
+						node = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			id = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "458682e9-77ed-478f-a432-8fb48796ef06"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "f4b3d332-eb39-4cc4-a110-212608671d51"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "e965d18f-3d99-47fb-a30e-637218db270f"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "64005816-73c0-47cf-9e30-c5eebddf0ad2"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				released = [
+					{
+						event = 0
+						id = "afcd5154-05c6-4f6b-b6da-51b554638246:0"
+						node = "afcd5154-05c6-4f6b-b6da-51b554638246"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "c"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			id = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+			in_event_index = [
+				"Camera Switcher In"
+			]
+			in_variables = {
+				camera_amount_in = {
+					type = "float"
+				}
+				camera1_unit_in = {
+					node = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+					type = "unit"
+					variable = "unit"
+				}
+				camera2_unit_in = {
+					node = "f4b3d332-eb39-4cc4-a110-212608671d51"
+					type = "unit"
+					variable = "unit"
+				}
+				camera3_unit_in = {
+					node = "417ea3e2-6884-4bf2-bdf2-cd2017067334"
+					type = "unit"
+					variable = "unit"
+				}
+				camera4_unit_in = {
+					type = "unit"
+				}
+			}
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				camera_amount_in = 3
+				camera1_unit_in = null
+				camera2_unit_in = null
+				camera3_unit_in = null
+				camera4_unit_in = null
+				flow = "script/Camera_Switcher"
+			}
+		}
+		{
+			id = "417ea3e2-6884-4bf2-bdf2-cd2017067334"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "9881c4ab-3ec9-436d-accb-5508721d6460"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "47f8cd52-db44-4672-99f8-c772f5f58263"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "99138272-1481-48f9-ac0b-cac98b718f02:0"
+						node = "99138272-1481-48f9-ac0b-cac98b718f02"
+					}
+					{
+						event = 0
+						id = "c847592e-ea12-40f8-98b6-9dbee4b1367e:0"
+						node = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+					}
+				]
+			}
+			type = "level_update"
+		}
+		{
+			id = "05b03018-24b0-4c9e-a717-83667bab1adf"
+			in_event_index = [
+				"Camera Position Constraint In"
+			]
+			in_variables = {
+				camera_unit_in = {
+					node = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+					type = "unit"
+					variable = "unit"
+				}
+				enable_aim_constraint_in = {
+					type = "bool"
+				}
+				target_unit_in = {
+					node = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				camera_unit_in = null
+				enable_aim_constraint_in = null
+				flow = "script/Camera_Position_Constraint"
+				target_unit_in = null
+			}
+		}
+		{
+			id = "99138272-1481-48f9-ac0b-cac98b718f02"
+			in_event_index = [
+				"Camera Aim Constraint In"
+			]
+			in_variables = {
+				target_unit_in = {
+					node = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				flow = "script/Camera_Aim_Constraint"
+				target_unit_in = null
+			}
+		}
+		{
+			id = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "34a5aed3-3be0-4b98-ac02-d2b49f7c8291"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "c847592e-ea12-40f8-98b6-9dbee4b1367e"
+			in_event_index = [
+				"Camera Orbit Constraint In"
+			]
+			in_variables = {
+				camera_unit_in = {
+					node = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+					type = "unit"
+					variable = "unit"
+				}
+				input_control_in = {
+					node = "392b45ff-3d1b-4694-98c2-493e7a1e2a4e"
+					type = "vector3"
+					variable = "value"
+				}
+				target_unit_in = {
+					node = "e4ea709e-a563-4ff4-b59f-5ad033aa6b5d"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				camera_unit_in = null
+				flow = "script/Camera_Orbit_Stuff"
+				input_control_in = null
+				target_unit_in = null
+			}
+		}
+		{
+			id = "392b45ff-3d1b-4694-98c2-493e7a1e2a4e"
+			in_variables = {
+				axis_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_variables = {
+				value = {
+					type = "vector3"
+				}
+			}
+			type = "xbox_axis"
+			variable_values = {
+				axis_name = "right"
+				device = "pad"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			id = "afcd5154-05c6-4f6b-b6da-51b554638246"
+			in_event_index = [
+			]
+			in_variables = {
+				position = {
+					type = "vector3"
+				}
+				rotation = {
+					type = "quaternion"
+				}
+				unit = {
+					type = "string"
+				}
+			}
+			out_event_index = [
+			]
+			type = "spawn_unit_position_rotation"
+			variable_values = {
+				position = [
+					0
+					0
+					0.01
+				]
+				rotation = null
+				spawned_unit = null
+				unit = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "96e33031-db4d-482c-8429-6c6ddacd98b7"
+			in_variables = {
+				Color = {
+					type = "vector3"
+				}
+				Label = {
+					type = "string"
+				}
+				Text = {
+					type = "string"
+				}
+			}
+			name = "Print To Screen"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Color = null
+				Label = null
+				Text = "Boom!"
+			}
+			variables = [
+				{
+					name = "Text"
+					type = "string"
+				}
+				{
+					name = "Label"
+					type = "string"
+				}
+				{
+					name = "Color"
+					type = "vector3"
+				}
+			]
+		}
+		{
+			id = "fe3e2e11-b11f-4d6e-93aa-958785a612e5"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "96e33031-db4d-482c-8429-6c6ddacd98b7:0"
+						node = "96e33031-db4d-482c-8429-6c6ddacd98b7"
+					}
+				]
+			}
+			type = "external_event"
+			variable_values = {
+				event_name = "explosion"
+			}
+		}
+		{
+			id = "bf50b07f-5d98-4287-b23e-8082038d9d42"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "832b2c3a-732d-4e91-938f-c0d1d4a30f66:0"
+						node = "832b2c3a-732d-4e91-938f-c0d1d4a30f66"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			id = "832b2c3a-732d-4e91-938f-c0d1d4a30f66"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+				string = {
+					type = "string"
+				}
+			}
+			type = "set_string_variable"
+			variable_values = {
+				name = "flowVariable"
+				scope = "local"
+				string = "NOEEP"
+			}
+		}
+		{
+			id = "40aec098-0450-484a-8edd-fbdd7ab9ae69"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				released = [
+					{
+						event = 0
+						id = "859328b3-1c32-4dbe-b90c-6a36ead6751b:0"
+						node = "859328b3-1c32-4dbe-b90c-6a36ead6751b"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "b"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "859328b3-1c32-4dbe-b90c-6a36ead6751b"
+			in_variables = {
+				Color = {
+					type = "vector3"
+				}
+				Label = {
+					type = "string"
+				}
+				Text = {
+					node = "135178ce-d8a3-4319-8469-f211e7bb5fa9"
+					type = "string"
+					variable = "string"
+				}
+			}
+			name = "Print To Screen"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Color = null
+				Label = "Flow Variable: "
+				Text = null
+			}
+			variables = [
+				{
+					name = "Text"
+					type = "string"
+				}
+				{
+					name = "Label"
+					type = "string"
+				}
+				{
+					name = "Color"
+					type = "vector3"
+				}
+			]
+		}
+		{
+			id = "135178ce-d8a3-4319-8469-f211e7bb5fa9"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+			}
+			out_variables = {
+				string = {
+					type = "string"
+				}
+			}
+			type = "get_string_variable"
+			variable_values = {
+				name = "flowVariable"
+				scope = "local"
+				string = null
+			}
+		}
+		{
+			id = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+			in_variables = {
+				arg1 = {
+					node = "9b579900-b300-4f5b-9610-013f1432fd0d"
+					type = "string"
+					variable = "value"
+				}
+				arg2 = {
+					type = "generic"
+				}
+				arg3 = {
+					type = "generic"
+				}
+				arg4 = {
+					type = "generic"
+				}
+				arg5 = {
+					type = "generic"
+				}
+			}
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "2c5387da-18e4-43b7-b6ea-873e8f894cd5:0"
+						node = "2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+					}
+				]
+			}
+			type = "script_call_global"
+			variable_values = {
+				arg1 = null
+				arg2 = null
+				arg3 = null
+				arg4 = null
+				arg5 = null
+				function = "Project.CallFromFlow"
+			}
+		}
+		{
+			id = "ca222cfe-5e09-4911-a712-821ca7633d9e"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				released = [
+					{
+						event = 0
+						id = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d:0"
+						node = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "n"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			id = "2c5387da-18e4-43b7-b6ea-873e8f894cd5"
+			out_events = {
+				out1 = [
+					{
+						event = 0
+						id = "fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29:0"
+						node = "fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29"
+					}
+				]
+				out2 = [
+					{
+						event = 0
+						id = "8e122a5f-6f72-4c9f-993c-363e18f34884:0"
+						node = "8e122a5f-6f72-4c9f-993c-363e18f34884"
+					}
+				]
+			}
+			type = "sequence"
+		}
+		{
+			id = "fbc1cd93-807b-4a5f-96bc-ec7dc1fb5f29"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+				string = {
+					node = "0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+					type = "string"
+					variable = "string"
+				}
+			}
+			type = "set_string_variable"
+			variable_values = {
+				name = "flowVariable"
+				scope = "local"
+				string = null
+			}
+		}
+		{
+			id = "0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+			out_variables = {
+				string = {
+					type = "string"
+				}
+			}
+			type = "external_input_string"
+			variable_values = {
+				name = "in_flowvariable"
+				string = null
+			}
+		}
+		{
+			id = "56197fb9-8a13-4405-b6e1-9bd74a976fe8"
+			in_variables = {
+				string = {
+					node = "0ef38151-8dc5-4949-a1d4-0c13425e4d52"
+					type = "string"
+					variable = "string"
+				}
+			}
+			type = "external_output_string"
+			variable_values = {
+				name = "out_flowvariable"
+				string = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "8e122a5f-6f72-4c9f-993c-363e18f34884"
+			in_variables = {
+				Color = {
+					type = "vector3"
+				}
+				Label = {
+					type = "string"
+				}
+				Text = {
+					node = "dc26d45e-f871-4fa1-8d32-7e53f14d0e3c"
+					type = "string"
+					variable = "string"
+				}
+			}
+			name = "Print To Screen"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Color = null
+				Label = null
+				Text = null
+			}
+			variables = [
+				{
+					name = "Text"
+					type = "string"
+				}
+				{
+					name = "Label"
+					type = "string"
+				}
+				{
+					name = "Color"
+					type = "vector3"
+				}
+			]
+		}
+		{
+			id = "dc26d45e-f871-4fa1-8d32-7e53f14d0e3c"
+			in_variables = {
+				name = {
+					type = "string"
+				}
+				scope = {
+					type = "string"
+				}
+			}
+			out_variables = {
+				string = {
+					type = "string"
+				}
+			}
+			type = "get_string_variable"
+			variable_values = {
+				name = "flowVariable"
+				scope = "local"
+				string = null
+			}
+		}
+		{
+			id = "9b579900-b300-4f5b-9610-013f1432fd0d"
+			out_variables = {
+				value = {
+					type = "string"
+				}
+			}
+			type = "string_data"
+			variable_values = {
+				set = "Argumenting"
+				value = null
+			}
+		}
+	]
+}
+level_references = [
+]
+level_settings = {
+	num_background_units = 0
+	sound_environment = ""
+	timpani_sound_environment = "default"
+}
+navmeshes = [
+]
+object_sets = {
+}
+particle_effects = [
+]
+prototypes = [
+]
+scatter = [
+]
+sounds = [
+]
+splines = [
+]
+stories = [
+]
+triggers = [
+]
+units = [
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1bb2346b-e579-4892-a7dc-589a938d6c78"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 2
+				material = ""
+				shadow_depth_bias = 0.4
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "directional"
+			}
+		}
+		material = "core/units/light_source"
+		materials = {
+		}
+		name = "light_source"
+		pos = [
+			0
+			0
+			7.5
+		]
+		rot = [
+			0.5
+			-0.5
+			0
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "34a5aed3-3be0-4b98-ac02-d2b49f7c8291"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Servo"
+		pos = [
+			0
+			0
+			0.062
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			2
+			2
+			2
+		]
+		type = "content/models/Servo/Servo"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4f1e01dc-8092-4a77-9b57-4879a4d5a804"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cd6eb2fe-af46-4fc0-983e-efff9323ad03"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform1"
+		pos = [
+			10
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			8.94896662497055E-10
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e81fea46-a7ad-47bf-907e-6fa1f385d74c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform2"
+		pos = [
+			-10
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "30b56380-7a82-4bfb-b1d5-2e32f4662eb7"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform3"
+		pos = [
+			-20
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "82d78a6f-a527-4e49-93cb-a6dce6cdfa92"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform4"
+		pos = [
+			20
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c55be6c4-c89f-4587-ba4f-da7534fb102a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform5"
+		pos = [
+			20
+			10
+			0
+		]
+		rot = [
+			0
+			0
+			0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3d9f197e-b4dd-4dc3-834a-73468d4d8fad"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform6"
+		pos = [
+			10
+			10
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c6f6afb5-0100-4bb4-88c3-58e18d6239e3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform7"
+		pos = [
+			0
+			10
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			8.94896662497055E-10
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dbd3aebd-2e02-4e17-8168-c7b21ac39ce9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform8"
+		pos = [
+			-10
+			10
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f06b4e63-34e5-4142-9ede-72bc00389faf"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform9"
+		pos = [
+			-20
+			10
+			0
+		]
+		rot = [
+			0
+			0
+			0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "58fcd9c4-a33b-47a3-a75e-d057691152ac"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform10"
+		pos = [
+			20
+			20
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ad018840-1b53-4d66-864b-00d3920d761f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform11"
+		pos = [
+			10
+			20
+			0
+		]
+		rot = [
+			0
+			0
+			0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d91ed496-1bd4-492b-bc96-df6b4165192a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform12"
+		pos = [
+			0
+			20
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5bc6aa06-9f37-4769-9a86-189f0e760a31"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform13"
+		pos = [
+			-10
+			20
+			0
+		]
+		rot = [
+			0
+			0
+			0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "25c301b6-a0fd-401c-b4a6-a8938a4f0e0e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform14"
+		pos = [
+			-20
+			20
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1e6b4828-1cd0-4ae0-ab4f-2cc24c0e2b4d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform15"
+		pos = [
+			20
+			-10
+			0
+		]
+		rot = [
+			0
+			0
+			1
+			8.94896662497055E-10
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ac780f75-e144-46a0-9b79-4eb6b6c5b4bf"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform16"
+		pos = [
+			10
+			-10
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a7a82ad6-3826-4ce4-9815-81cd6bf3b2dc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform17"
+		pos = [
+			0
+			-10
+			0
+		]
+		rot = [
+			0
+			0
+			-0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d7fa44ad-726f-4620-bccc-57296801d5b1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform18"
+		pos = [
+			-10
+			-10
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "49f6eb24-2c44-4152-82c7-1dc5519983fc"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform19"
+		pos = [
+			-20
+			-10
+			0
+		]
+		rot = [
+			0
+			0
+			-0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2f513703-ae80-4a2e-9253-213531255fbb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform20"
+		pos = [
+			20
+			-20
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3f525952-6bf4-4f57-9356-d938fa81ceea"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform21"
+		pos = [
+			10
+			-20
+			0
+		]
+		rot = [
+			0
+			0
+			-0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c2fa1d8c-3c38-47c7-8970-e0d370de93f0"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform22"
+		pos = [
+			0
+			-20
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "10feec14-ccbe-44f3-b97e-b9f5f1c23656"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform23"
+		pos = [
+			-10
+			-20
+			0
+		]
+		rot = [
+			0
+			0
+			-0.707106780870154
+			0.707106781502941
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ba9de463-6775-44f6-a488-9d2506af30c9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Platform24"
+		pos = [
+			-20
+			-20
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Platforms/Platform"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e34718d7-5593-4fc8-82f2-5b66af3d33ad"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Skydome"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/editor_slave/units/skydome/skydome"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "458682e9-77ed-478f-a432-8fb48796ef06"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "camera"
+		pos = [
+			-0.257993
+			-10.52088
+			7.356603
+		]
+		rot = [
+			0.067449
+			-0.000343
+			0.005082
+			-0.99771
+		]
+		scl = [
+			1.000029
+			1.000034
+			1.000003
+		]
+		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "e965d18f-3d99-47fb-a30e-637218db270f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "camera1"
+		pos = [
+			-33.028706
+			27.264565
+			26.310474
+		]
+		rot = [
+			0.090826
+			-0.216509
+			0.896369
+			-0.376027
+		]
+		scl = [
+			1.000013
+			1.000012
+			1
+		]
+		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "9881c4ab-3ec9-436d-accb-5508721d6460"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "camera2"
+		pos = [
+			-14.780991
+			8.657851
+			0.038691
+		]
+		rot = [
+			-0.073834
+			0.131627
+			0.862167
+			-0.483623
+		]
+		scl = [
+			1.000016
+			1.000034
+			1.000001
+		]
+		type = "core/units/camera"
+	}
+]
+volumes = [
+]

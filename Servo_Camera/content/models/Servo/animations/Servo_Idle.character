@@ -1,0 +1,98 @@
+unit_name = "Servo_Idle"
+
+bones_mapping = [
+	{ id = 1 name = "Hips" bone = "Servo_Hips" }
+	{ id = 2 name = "LeftUpLeg" bone = "Servo_LeftUpLeg" }
+	{ id = 3 name = "LeftLeg" bone = "Servo_LeftLeg" }
+	{ id = 4 name = "LeftFoot" bone = "Servo_LeftFoot" }
+	{ id = 16 name = "LeftToeBase" bone = "Servo_LeftToeBase" }
+	{ id = 5 name = "RightUpLeg" bone = "Servo_RightUpLeg" }
+	{ id = 6 name = "RightLeg" bone = "Servo_RightLeg" }
+	{ id = 7 name = "RightFoot" bone = "Servo_RightFoot" }
+	{ id = 17 name = "RightToeBase" bone = "Servo_RightToeBase" }
+	{ id = 8 name = "Spine" bone = "Servo_Spine" }
+	{ id = 9 name = "LeftArm" bone = "Servo_LeftArm" }
+	{ id = 10 name = "LeftForeArm" bone = "Servo_LeftForeArm" }
+	{ id = 11 name = "LeftHand" bone = "Servo_LeftHand" }
+	{ id = 12 name = "RightArm" bone = "Servo_RightArm" }
+	{ id = 13 name = "RightForeArm" bone = "Servo_RightForeArm" }
+	{ id = 14 name = "RightHand" bone = "Servo_RightHand" }
+	{ id = 15 name = "Head" bone = "Servo_Head" }
+	{ id = 50 name = "LeftHandThumb1" bone = "Servo_LeftHandThumb1" }
+	{ id = 51 name = "LeftHandThumb2" bone = "Servo_LeftHandThumb2" }
+	{ id = 52 name = "LeftHandThumb3" bone = "Servo_LeftHandThumb3" }
+	{ id = 58 name = "LeftHandMiddle1" bone = "Servo_LeftHandMiddle1" }
+	{ id = 59 name = "LeftHandMiddle2" bone = "Servo_LeftHandMiddle2" }
+	{ id = 60 name = "LeftHandMiddle3" bone = "Servo_LeftHandMiddle3" }
+	{ id = 74 name = "RightHandThumb1" bone = "Servo_RightHandThumb1" }
+	{ id = 75 name = "RightHandThumb2" bone = "Servo_RightHandThumb2" }
+	{ id = 76 name = "RightHandThumb3" bone = "Servo_RightHandThumb3" }
+	{ id = 82 name = "RightHandMiddle1" bone = "Servo_RightHandMiddle1" }
+	{ id = 83 name = "RightHandMiddle2" bone = "Servo_RightHandMiddle2" }
+	{ id = 84 name = "RightHandMiddle3" bone = "Servo_RightHandMiddle3" }
+	{ id = 0 name = "Reference" bone = "Servo_Reference" }
+	{ id = 21 name = "LeftFingerBase" bone = "Servo_LeftFingerBase" }
+	{ id = 22 name = "RightFingerBase" bone = "Servo_RightFingerBase" }
+	{ id = 106 name = "LeftFootMiddle1" bone = "Servo_LeftFootMiddle1" }
+	{ id = 130 name = "RightFootMiddle1" bone = "Servo_RightFootMiddle1" }
+]
+
+contact_foot_type = 0
+contact_foot_bottom_to_ankle = 0.114921
+contact_foot_back_to_ankle = 0.119974
+contact_foot_middle_to_ankle = 0.239947
+contact_foot_front_to_middle = 0.119974
+contact_foot_in_to_ankle = 0.119974
+contact_foot_out_to_ankle = 0.119974
+
+contact_hand_type = 0
+contact_hand_bottom_to_wrist = 0.026528
+contact_hand_back_to_wrist = 0.000100
+contact_hand_middle_to_wrist = 0.189464
+contact_hand_front_to_middle = 0.189464
+contact_hand_in_to_wrist = 0.189464
+contact_hand_out_to_wrist = 0.189464
+
+t_stance = [
+	{ tx = 0.000000 ty = 0.908406 tz = 0.000000 qx = 0.500000 qy = 0.500000 qz = 0.500000 qw = 0.500000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.190000 ty = 0.778123 tz = 0.000000 qx = -0.500192 qy = 0.499808 qz = -0.500255 qw = 0.499745 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.189969 ty = 0.534256 tz = 0.000218 qx = -0.499870 qy = 0.500130 qz = -0.499870 qw = 0.500130 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.189969 ty = 0.114921 tz = 0.000000 qx = -0.696467 qy = 0.122433 qz = -0.696384 qw = 0.122448 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.190000 ty = 0.027859 tz = 0.239947 qx = 0.707106 qy = 0.000762 qz = 0.707106 qw = 0.000762 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.190000 ty = 0.778123 tz = 0.000000 qx = 0.499745 qy = 0.500255 qz = 0.499808 qw = 0.500192 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.189970 ty = 0.534256 tz = 0.000218 qx = 0.500130 qy = 0.499870 qz = 0.500130 qw = 0.499870 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.189969 ty = 0.114921 tz = 0.000000 qx = 0.122448 qy = 0.696384 qz = 0.122433 qw = 0.696467 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.190000 ty = 0.027859 tz = 0.239947 qx = -0.000762 qy = 0.707106 qz = -0.000762 qw = 0.707106 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.000000 ty = 0.978406 tz = 0.000000 qx = 0.500000 qy = 0.500000 qz = 0.500000 qw = 0.500000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.400000 ty = 1.099758 tz = 0.000000 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.746870 ty = 1.099758 tz = 0.000000 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.007891 ty = 1.099758 tz = 0.000000 qx = 0.999295 qy = 0.037546 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.400000 ty = 1.099760 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.746870 ty = 1.099760 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.007890 ty = 1.099760 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = -0.037546 qw = 0.999295 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.000000 ty = 1.099281 tz = 0.000000 qx = -0.500000 qy = 0.500000 qz = -0.500000 qw = 0.500000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.101668 ty = 1.076924 tz = 0.075814 qx = -0.888439 qy = 0.167433 qz = -0.419974 qw = 0.079147 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.134385 ty = 1.056780 tz = 0.115646 qx = -0.885492 qy = 0.155778 qz = -0.431143 qw = 0.075848 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.175927 ty = 1.032322 tz = 0.168671 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.248480 ty = 1.109555 tz = 0.000000 qx = 0.995016 qy = -0.099711 qz = -0.000037 qw = 0.000004 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.289687 ty = 1.101212 tz = -0.000003 qx = -0.977479 qy = 0.211034 qz = -0.000050 qw = 0.000011 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.318970 ty = 1.087949 tz = 0.000000 qx = 0.999295 qy = 0.037546 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.101670 ty = 1.076920 tz = 0.075814 qx = 0.472260 qy = 0.450300 qz = -0.040525 qw = 0.756676 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.134380 ty = 1.056780 tz = 0.115646 qx = 0.467985 qy = 0.454993 qz = -0.055971 qw = 0.755539 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.175930 ty = 1.032320 tz = 0.168671 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.248480 ty = 1.109550 tz = 0.000000 qx = -0.000004 qy = -0.000037 qz = 0.099711 qw = 0.995016 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.289690 ty = 1.101210 tz = -0.000003 qx = 0.000011 qy = 0.000050 qz = 0.211034 qw = 0.977479 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.318970 ty = 1.087950 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = -0.037546 qw = 0.999295 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.000000 ty = 0.000000 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 1.197355 ty = 1.114015 tz = 0.000000 qx = 0.999053 qy = -0.043501 qz = -0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -1.197350 ty = 1.114020 tz = 0.000000 qx = 0.000000 qy = 0.000000 qz = 0.043501 qw = 0.999053 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = 0.190000 ty = 0.028073 tz = 0.339238 qx = 0.000000 qy = 0.000000 qz = 0.000000 qw = 1.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+	{ tx = -0.190000 ty = 0.028073 tz = 0.339238 qx = 1.000000 qy = 0.000000 qz = 0.000000 qw = 0.000000 sx = 1.000000 sy = 1.000000 sz = 1.000000 }
+]
+
+parent_offsets = [
+	{ nodeID = 0 parents = [ ] }
+]
+
+limits = [
+]
