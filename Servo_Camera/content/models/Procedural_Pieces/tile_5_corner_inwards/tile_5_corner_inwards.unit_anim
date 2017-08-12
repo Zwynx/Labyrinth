@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "8f28e9b0-8414-4a25-9464-918b527e9d65"
+_name = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+anim_controller_ref = {
+	_id = "f1fdfca0-1880-4b15-8976-dc54f65a6413"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "d7b8873d-2835-48c1-ba3b-3a6d054a174e"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "12872ffd-500b-410a-a123-5797ffdadcdc"
+	ref_filename = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"

@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "dbb63e1a-2064-4e03-a0fe-ae7edd791133"
+_name = "content/models/Procedural_Pieces/tile_7_roof/tile_7_roof"
+anim_controller_ref = {
+	_id = "9e0cb79a-ea27-4b53-a26a-ce5bfaaa7147"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "a58365f9-9368-40f4-b87a-43ccbf5eb287"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "0d7ef082-7955-441b-90a9-745126232c51"
+	ref_filename = "content/models/Procedural_Pieces/tile_7_roof/tile_7_roof.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Procedural_Pieces/tile_7_roof/tile_7_roof"

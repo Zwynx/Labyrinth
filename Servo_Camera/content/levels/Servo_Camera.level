@@ -111,14 +111,6 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Released"
-				FromNode = "64005816-73c0-47cf-9e30-c5eebddf0ad2"
-				Priority = 0
-				ToItem = "Spawn"
-				ToNode = "afcd5154-05c6-4f6b-b6da-51b554638246"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Out"
 				FromNode = "fe3e2e11-b11f-4d6e-93aa-958785a612e5"
 				Priority = 0
@@ -213,6 +205,46 @@ editor_metadata = {
 				ToNode = "2dc22e99-edaf-421e-b65e-c7ae7a676c7d"
 				Type = "String"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dc24762e-8278-4b70-ba9a-9c877da39ece"
+				Priority = 0
+				ToItem = "Spawn"
+				ToNode = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dc24762e-8278-4b70-ba9a-9c877da39ece"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "d38f86cb-3360-4500-91e4-0c6d76250ffe"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Vector3"
+				FromNode = "de368893-1e9f-4994-b381-148c4ee75235"
+				ToItem = "Position"
+				ToNode = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+				Type = "Vector3"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Vector3"
+				FromNode = "de368893-1e9f-4994-b381-148c4ee75235"
+				ToItem = "Vector"
+				ToNode = "c98211b3-5e74-4b3a-b3ad-4059e84c3506"
+				Type = "Vector3"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "String"
+				FromNode = "bab55b98-79da-465b-9f16-85ff5ddf13b2"
+				ToItem = "Unit"
+				ToNode = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+				Type = "String"
+			}
 		]
 		Groups = [
 			{
@@ -287,6 +319,20 @@ editor_metadata = {
 				]
 				Title = "Set & Get Flow Variable from Lua"
 			}
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "dee53956-f7d1-469a-b9c6-d8d5f702009d"
+				Nodes = [
+					"9c066b63-607e-4785-ac2f-7f9f28266c49"
+					"bab55b98-79da-465b-9f16-85ff5ddf13b2"
+					"dc24762e-8278-4b70-ba9a-9c877da39ece"
+					"c98211b3-5e74-4b3a-b3ad-4059e84c3506"
+					"d38f86cb-3360-4500-91e4-0c6d76250ffe"
+				]
+				Title = "Try to make grid"
+			}
 		]
 		Nodes = [
 			{
@@ -357,34 +403,6 @@ editor_metadata = {
 				Title = "Level Unit"
 				Type = "core/units/camera"
 				Unit = {
-				}
-				Width = 160
-			}
-			{
-				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
-				ButtonName = {
-					Value = "c"
-				}
-				Class = "Stingray.Foundation.Flow.KeyboardButton"
-				Device = {
-					Value = "keyboard"
-				}
-				DeviceNumber = {
-					Value = 0
-				}
-				Held = {
-				}
-				Id = "64005816-73c0-47cf-9e30-c5eebddf0ad2"
-				NodeLocation = {
-					X = -740
-					Y = -860
-				}
-				Pressed = {
-				}
-				Released = {
-				}
-				Title = "Keyboard Button"
-				Value = {
 				}
 				Width = 160
 			}
@@ -662,47 +680,6 @@ editor_metadata = {
 				}
 				Title = "Xbox Thumbstick"
 				Value = {
-				}
-				Width = 160
-			}
-			{
-				Brief = "Spawns the unit at a specified position."
-				Class = "Stingray.Foundation.Flow.SpawnUnitPositionRotation"
-				Id = "afcd5154-05c6-4f6b-b6da-51b554638246"
-				InEvents = [
-				]
-				InVariableNames = [
-				]
-				InVariables = [
-				]
-				NodeLocation = {
-					X = -740
-					Y = -620
-				}
-				OutEvents = [
-				]
-				OutVariableNames = [
-				]
-				OutVariables = [
-				]
-				Position = {
-					Value = "0 0 0.01"
-				}
-				Rotation = {
-				}
-				Spawn = {
-				}
-				Spawned = {
-				}
-				SpawnedUnit = {
-				}
-				Title = "Spawn Unit on Position"
-				Unit = {
-					Value = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
-				}
-				Unspawn = {
-				}
-				Unspawned = {
 				}
 				Width = 160
 			}
@@ -1115,6 +1092,127 @@ editor_metadata = {
 				}
 				Title = "String Data"
 				Value = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Spawns the unit at a specified position."
+				Class = "Stingray.Foundation.Flow.SpawnUnitPositionRotation"
+				Id = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -1340
+					Y = -240
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Position = {
+				}
+				Rotation = {
+				}
+				Spawn = {
+				}
+				Spawned = {
+				}
+				SpawnedUnit = {
+				}
+				Title = "Spawn Unit on Position"
+				Unit = {
+				}
+				Unspawn = {
+				}
+				Unspawned = {
+				}
+				Width = 400
+			}
+			{
+				Brief = "Exposes an input port of type string for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalInputString"
+				Id = "bab55b98-79da-465b-9f16-85ff5ddf13b2"
+				Name = {
+					Value = "in_tilepath"
+				}
+				NodeLocation = {
+					X = -1740
+					Y = -200
+				}
+				String = {
+				}
+				Title = "External Input String"
+				Width = 200
+			}
+			{
+				Brief = "Exposes an input port of type event for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalEvent"
+				EventName = {
+					Value = "in_spawnTile"
+				}
+				Id = "dc24762e-8278-4b70-ba9a-9c877da39ece"
+				NodeLocation = {
+					X = -1760
+					Y = -20
+				}
+				Out = {
+				}
+				Title = "External In Event"
+				Width = 200
+			}
+			{
+				Brief = "Converts a vector3 value to a string."
+				Class = "Stingray.Foundation.Flow.VectorToString"
+				Id = "c98211b3-5e74-4b3a-b3ad-4059e84c3506"
+				NodeLocation = {
+					X = -1320
+					Y = -40
+				}
+				Title = "Vector To String"
+				Value = {
+				}
+				Vector = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Prints the combined label and text to the log console."
+				Class = "Stingray.Foundation.Flow.DebugPrint"
+				Id = "d38f86cb-3360-4500-91e4-0c6d76250ffe"
+				In = {
+				}
+				Label = {
+				}
+				NodeLocation = {
+					X = -1120
+					Y = -40
+				}
+				Out = {
+				}
+				Text = {
+				}
+				Title = "Debug Print"
+				Width = 160
+			}
+			{
+				Brief = "Exposes an input port of type vector3 for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalInputVector3"
+				Id = "de368893-1e9f-4994-b381-148c4ee75235"
+				Name = {
+					Value = "in_position"
+				}
+				NodeLocation = {
+					X = -1700
+					Y = -60
+				}
+				Title = "External Input Vector 3"
+				Vector3 = {
 				}
 				Width = 160
 			}
@@ -2444,36 +2542,6 @@ flow = {
 			}
 		}
 		{
-			id = "64005816-73c0-47cf-9e30-c5eebddf0ad2"
-			in_variables = {
-				button_name = {
-					type = "string"
-				}
-				device = {
-					type = "string"
-				}
-				device_number = {
-					type = "float"
-				}
-			}
-			out_events = {
-				released = [
-					{
-						event = 0
-						id = "afcd5154-05c6-4f6b-b6da-51b554638246:0"
-						node = "afcd5154-05c6-4f6b-b6da-51b554638246"
-					}
-				]
-			}
-			type = "keyboard_button"
-			variable_values = {
-				button_name = "c"
-				device = "keyboard"
-				device_number = 0
-				value = null
-			}
-		}
-		{
 			id = "c2dda51b-b394-407f-929c-8371ae30f2f5"
 			in_event_index = [
 				"Camera Switcher In"
@@ -2675,35 +2743,6 @@ flow = {
 				device = "pad"
 				device_number = 0
 				value = null
-			}
-		}
-		{
-			id = "afcd5154-05c6-4f6b-b6da-51b554638246"
-			in_event_index = [
-			]
-			in_variables = {
-				position = {
-					type = "vector3"
-				}
-				rotation = {
-					type = "quaternion"
-				}
-				unit = {
-					type = "string"
-				}
-			}
-			out_event_index = [
-			]
-			type = "spawn_unit_position_rotation"
-			variable_values = {
-				position = [
-					0
-					0
-					0.01
-				]
-				rotation = null
-				spawned_unit = null
-				unit = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
 			}
 		}
 		{
@@ -3101,6 +3140,113 @@ flow = {
 			variable_values = {
 				set = "Argumenting"
 				value = null
+			}
+		}
+		{
+			id = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+			in_event_index = [
+			]
+			in_variables = {
+				position = {
+					node = "de368893-1e9f-4994-b381-148c4ee75235"
+					type = "vector3"
+					variable = "vector3"
+				}
+				rotation = {
+					type = "quaternion"
+				}
+				unit = {
+					node = "bab55b98-79da-465b-9f16-85ff5ddf13b2"
+					type = "string"
+					variable = "string"
+				}
+			}
+			out_event_index = [
+			]
+			type = "spawn_unit_position_rotation"
+			variable_values = {
+				position = null
+				rotation = null
+				spawned_unit = null
+				unit = null
+			}
+		}
+		{
+			id = "bab55b98-79da-465b-9f16-85ff5ddf13b2"
+			out_variables = {
+				string = {
+					type = "string"
+				}
+			}
+			type = "external_input_string"
+			variable_values = {
+				name = "in_tilepath"
+				string = null
+			}
+		}
+		{
+			id = "dc24762e-8278-4b70-ba9a-9c877da39ece"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "9c066b63-607e-4785-ac2f-7f9f28266c49:0"
+						node = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+					}
+					{
+						event = 0
+						id = "d38f86cb-3360-4500-91e4-0c6d76250ffe:0"
+						node = "d38f86cb-3360-4500-91e4-0c6d76250ffe"
+					}
+				]
+			}
+			type = "external_event"
+			variable_values = {
+				event_name = "in_spawnTile"
+			}
+		}
+		{
+			id = "c98211b3-5e74-4b3a-b3ad-4059e84c3506"
+			in_variables = {
+				vector = {
+					node = "de368893-1e9f-4994-b381-148c4ee75235"
+					type = "vector3"
+					variable = "vector3"
+				}
+			}
+			type = "vector_to_string"
+			variable_values = {
+				value = null
+				vector = null
+			}
+		}
+		{
+			id = "d38f86cb-3360-4500-91e4-0c6d76250ffe"
+			in_variables = {
+				label = {
+					type = "string"
+				}
+				text = {
+					type = "string"
+				}
+			}
+			type = "debug_print"
+			variable_values = {
+				label = null
+				text = null
+			}
+		}
+		{
+			id = "de368893-1e9f-4994-b381-148c4ee75235"
+			out_variables = {
+				vector3 = {
+					type = "vector3"
+				}
+			}
+			type = "external_input_vector3"
+			variable_values = {
+				name = "in_position"
+				vector3 = null
 			}
 		}
 	]

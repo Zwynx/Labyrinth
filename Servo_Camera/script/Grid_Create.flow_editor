@@ -1,0 +1,163 @@
+
+Connections = [
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "8ce961c4-2237-40c4-9cee-213bc964258e"
+		Id = "5652e83b-3476-4a6f-b208-a7ab7d42f4bd"
+		Priority = 0
+		ToItem = "Spawn"
+		ToNode = "90ed75f1-2521-435c-aadc-4f102889b1d8"
+	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "Out"
+		FromNode = "8ce961c4-2237-40c4-9cee-213bc964258e"
+		Id = "48f429c2-9950-453a-8d81-46903c0f83ff"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "f4913fd6-9afd-413a-ab00-f23e0e514cb3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Vector3"
+		FromNode = "970d2e53-ad24-4806-a333-a6dd62c17e62"
+		Id = "6a0ae6e5-d578-4115-a771-9e4927c1285e"
+		ToItem = "Position"
+		ToNode = "90ed75f1-2521-435c-aadc-4f102889b1d8"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Vector3"
+		FromNode = "970d2e53-ad24-4806-a333-a6dd62c17e62"
+		Id = "1672e13b-c407-48a3-8f2f-8b22fdafef89"
+		ToItem = "Vector"
+		ToNode = "2b8a282d-0427-44ce-9bb7-3f268813863c"
+		Type = "Vector3"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "String"
+		FromNode = "68f0c1f6-17d6-485d-b069-4308e169b543"
+		Id = "46e7c729-c4f1-431a-8fbe-916195837d0d"
+		ToItem = "Unit"
+		ToNode = "90ed75f1-2521-435c-aadc-4f102889b1d8"
+		Type = "String"
+	}
+]
+Groups = [
+	{
+		Collapsed = false
+		Groups = [
+		]
+		Id = "e47762dc-8224-447e-99ca-db6a8702e38c"
+		Nodes = [
+			"90ed75f1-2521-435c-aadc-4f102889b1d8"
+			"68f0c1f6-17d6-485d-b069-4308e169b543"
+			"8ce961c4-2237-40c4-9cee-213bc964258e"
+			"2b8a282d-0427-44ce-9bb7-3f268813863c"
+			"f4913fd6-9afd-413a-ab00-f23e0e514cb3"
+		]
+		Title = "Try to make grid"
+	}
+]
+Nodes = [
+	{
+		Class = "Stingray.Flow.SpawnUnitPositionRotation"
+		Id = "90ed75f1-2521-435c-aadc-4f102889b1d8"
+		NodeLocation = {
+			X = 820
+			Y = 320
+		}
+		Position = {
+		}
+		Rotation = {
+		}
+		Spawn = {
+		}
+		Spawned = {
+		}
+		SpawnedUnit = {
+		}
+		Unit = {
+		}
+		Unspawn = {
+		}
+		Unspawned = {
+		}
+		Width = 400
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputString"
+		Id = "68f0c1f6-17d6-485d-b069-4308e169b543"
+		Name = {
+			Value = "in_tilepath"
+		}
+		NodeLocation = {
+			X = 420
+			Y = 360
+		}
+		String = {
+		}
+		Width = 200
+	}
+	{
+		Class = "Stingray.Flow.ExternalEvent"
+		EventName = {
+			Value = "in_spawnTile"
+		}
+		Id = "8ce961c4-2237-40c4-9cee-213bc964258e"
+		NodeLocation = {
+			X = 400
+			Y = 540
+		}
+		Out = {
+		}
+		Width = 200
+	}
+	{
+		Class = "Stingray.Flow.VectorToString"
+		Id = "2b8a282d-0427-44ce-9bb7-3f268813863c"
+		NodeLocation = {
+			X = 840
+			Y = 520
+		}
+		Value = {
+		}
+		Vector = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.DebugPrint"
+		Id = "f4913fd6-9afd-413a-ab00-f23e0e514cb3"
+		In = {
+		}
+		Label = {
+		}
+		NodeLocation = {
+			X = 1040
+			Y = 520
+		}
+		Out = {
+		}
+		Text = {
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.ExternalInputVector3"
+		Id = "970d2e53-ad24-4806-a333-a6dd62c17e62"
+		Name = {
+			Value = "in_position"
+		}
+		NodeLocation = {
+			X = 440
+			Y = 460
+		}
+		Vector3 = {
+		}
+		Width = 160
+	}
+]

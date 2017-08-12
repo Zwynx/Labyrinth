@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "338ea79c-27cd-43ec-9396-250adc9593d6"
+_name = "content/models/Procedural_Pieces/tile_1_floor/tile_1_floor"
+anim_controller_ref = {
+	_id = "5dbeae5b-c7e7-4814-a670-6fef487169ab"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "0cf1d368-9dad-40be-9f18-f3059cb8228e"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "6021bf43-1f08-4eea-9281-9a8950267c76"
+	ref_filename = "content/models/Procedural_Pieces/tile_1_floor/tile_1_floor.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Procedural_Pieces/tile_1_floor/tile_1_floor"

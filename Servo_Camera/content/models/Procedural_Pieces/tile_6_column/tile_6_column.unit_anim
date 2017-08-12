@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "0c6e930b-6a18-4241-8213-cfa82b978643"
+_name = "content/models/Procedural_Pieces/tile_6_column/tile_6_column"
+anim_controller_ref = {
+	_id = "b2926bb6-14b3-47a7-a1e9-211576fb9c4e"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "d8934770-7b85-4e78-a798-cf817ec5b78d"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "00395ccb-5968-4f56-a85c-f6b23baa54e4"
+	ref_filename = "content/models/Procedural_Pieces/tile_6_column/tile_6_column.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/Procedural_Pieces/tile_6_column/tile_6_column"

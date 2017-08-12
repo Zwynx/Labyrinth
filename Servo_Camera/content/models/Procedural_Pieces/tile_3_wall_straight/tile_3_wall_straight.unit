@@ -1,0 +1,24 @@
+
+materials = {
+	lambert1 = "content/models/Procedural_Pieces/tile_3_wall_straight/lambert1"
+}
+renderables = {
+	floor_tile = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	wall_straight = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}
