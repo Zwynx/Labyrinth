@@ -164,15 +164,6 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Y"
-		FromNode = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
-		Id = "523edaa6-b8ae-4966-9c0e-8aef47e04e8c"
-		ToItem = "Increment"
-		ToNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Numeric"
 		FromNode = "f55a8b69-4047-4ff8-9c8b-58fbc5d321fa"
 		Id = "56191853-78c8-4c56-82ab-108e496b3dfd"
@@ -396,6 +387,24 @@ Connections = [
 		ToNode = "b7f171a3-a193-41bb-8835-69b86d288b9f"
 		Type = "Vector3"
 	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Y"
+		FromNode = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		Id = "27ffe859-32eb-4e8a-bf67-e3db8a80b1eb"
+		ToItem = "A"
+		ToNode = "e8b0b00d-ddda-4da3-b2e8-20b9f7b83e9c"
+		Type = "Float"
+	}
+	{
+		Class = "Stingray.Flow.VariableConnection"
+		FromItem = "Value"
+		FromNode = "e8b0b00d-ddda-4da3-b2e8-20b9f7b83e9c"
+		Id = "febdf80d-ecfc-4185-bbff-cad0259d3211"
+		ToItem = "Increment"
+		ToNode = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+		Type = "Float"
+	}
 ]
 Groups = [
 	{
@@ -493,7 +502,7 @@ Nodes = [
 			Value = "Target Unit In"
 		}
 		NodeLocation = {
-			X = -440
+			X = -500
 			Y = 700
 		}
 		Unit = {
@@ -708,7 +717,7 @@ Nodes = [
 		}
 		Id = "6d0ec5ca-37a3-4e55-ad58-47302295bdda"
 		NodeLocation = {
-			X = -440
+			X = -500
 			Y = 780
 		}
 		Out = {
@@ -800,23 +809,6 @@ Nodes = [
 		Width = 160
 	}
 	{
-		Class = "Stingray.Flow.VectorComponents"
-		Id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
-		NodeLocation = {
-			X = -220
-			Y = 780
-		}
-		Vector = {
-		}
-		Width = 160
-		X = {
-		}
-		Y = {
-		}
-		Z = {
-		}
-	}
-	{
 		A = {
 		}
 		B = {
@@ -862,33 +854,6 @@ Nodes = [
 		}
 	}
 	{
-		Class = "Stingray.Flow.Sequence"
-		Id = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
-		In = {
-		}
-		NodeLocation = {
-			X = -220
-			Y = 920
-		}
-		Out1 = {
-		}
-		Out2 = {
-		}
-		Out3 = {
-		}
-		Out4 = {
-		}
-		Out5 = {
-		}
-		Out6 = {
-		}
-		Out7 = {
-		}
-		Out8 = {
-		}
-		Width = 160
-	}
-	{
 		Class = "Stingray.Flow.Once"
 		Id = "e43f0e08-f2e0-4696-9f77-568c516072f2"
 		In = {
@@ -921,7 +886,7 @@ Nodes = [
 			Value = "Input Control In"
 		}
 		NodeLocation = {
-			X = -440
+			X = -500
 			Y = 540
 		}
 		Vector3 = {
@@ -952,7 +917,7 @@ Nodes = [
 			Value = "Camera Unit In"
 		}
 		NodeLocation = {
-			X = -440
+			X = -500
 			Y = 620
 		}
 		Unit = {
@@ -1005,6 +970,66 @@ Nodes = [
 		}
 		Unit = {
 			UseMyUnit = false
+		}
+		Width = 160
+	}
+	{
+		Class = "Stingray.Flow.VectorComponents"
+		Id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		NodeLocation = {
+			X = -280
+			Y = 780
+		}
+		Vector = {
+		}
+		Width = 160
+		X = {
+		}
+		Y = {
+		}
+		Z = {
+		}
+	}
+	{
+		Class = "Stingray.Flow.Sequence"
+		Id = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		In = {
+		}
+		NodeLocation = {
+			X = -280
+			Y = 920
+		}
+		Out1 = {
+		}
+		Out2 = {
+		}
+		Out3 = {
+		}
+		Out4 = {
+		}
+		Out5 = {
+		}
+		Out6 = {
+		}
+		Out7 = {
+		}
+		Out8 = {
+		}
+		Width = 160
+	}
+	{
+		A = {
+		}
+		B = {
+			Value = -1
+		}
+		Class = "Stingray.Flow.NumericTimesNumeric"
+		Id = "e8b0b00d-ddda-4da3-b2e8-20b9f7b83e9c"
+		NodeLocation = {
+			X = -100
+			Y = 880
+		}
+		Value = {
 		}
 		Width = 160
 	}

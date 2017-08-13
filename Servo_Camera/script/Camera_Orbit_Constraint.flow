@@ -597,31 +597,6 @@ nodes = [
 		}
 	}
 	{
-		id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
-		in_variables = {
-			vector = {
-				node = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
-				type = "vector3"
-				variable = "vector3"
-			}
-		}
-		out_variables = {
-			x = {
-				type = "float"
-			}
-			y = {
-				type = "float"
-			}
-		}
-		type = "vector_components"
-		variable_values = {
-			vector = null
-			x = null
-			y = null
-			z = null
-		}
-	}
-	{
 		id = "6d0ec5ca-37a3-4e55-ad58-47302295bdda"
 		out_events = {
 			out = [
@@ -635,19 +610,6 @@ nodes = [
 		type = "external_event"
 		variable_values = {
 			event_name = "Camera Orbit Constraint In"
-		}
-	}
-	{
-		id = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
-		out_variables = {
-			vector3 = {
-				type = "vector3"
-			}
-		}
-		type = "external_input_vector3"
-		variable_values = {
-			name = "Input Control In"
-			vector3 = null
 		}
 	}
 	{
@@ -717,6 +679,44 @@ nodes = [
 		variable_values = {
 			flow = "script/Camera_Aim_Constraint"
 			target_unit_in = null
+		}
+	}
+	{
+		id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		in_variables = {
+			vector = {
+				node = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
+				type = "vector3"
+				variable = "vector3"
+			}
+		}
+		out_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
+		out_variables = {
+			vector3 = {
+				type = "vector3"
+			}
+		}
+		type = "external_input_vector3"
+		variable_values = {
+			name = "Input Control In"
+			vector3 = null
 		}
 	}
 	{

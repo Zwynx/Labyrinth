@@ -683,7 +683,7 @@ editor_metadata = {
 				OutVariables = [
 				]
 				Title = "Flow Subroutine"
-				Width = 160
+				Width = 380
 			}
 			{
 				AxisName = {
@@ -699,8 +699,8 @@ editor_metadata = {
 				}
 				Id = "392b45ff-3d1b-4694-98c2-493e7a1e2a4e"
 				NodeLocation = {
-					X = -340
-					Y = -460
+					X = -600
+					Y = -400
 				}
 				Out = {
 				}

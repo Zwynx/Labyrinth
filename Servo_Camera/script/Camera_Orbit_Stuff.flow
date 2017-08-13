@@ -183,9 +183,9 @@ nodes = [
 		id = "56b522e2-daba-450c-82ce-85d6bf164fe6"
 		in_variables = {
 			increment = {
-				node = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+				node = "e8b0b00d-ddda-4da3-b2e8-20b9f7b83e9c"
 				type = "float"
-				variable = "y"
+				variable = "value"
 			}
 			start_value = {
 				type = "float"
@@ -434,31 +434,6 @@ nodes = [
 		}
 	}
 	{
-		id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
-		in_variables = {
-			vector = {
-				node = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
-				type = "vector3"
-				variable = "vector3"
-			}
-		}
-		out_variables = {
-			x = {
-				type = "float"
-			}
-			y = {
-				type = "float"
-			}
-		}
-		type = "vector_components"
-		variable_values = {
-			vector = null
-			x = null
-			y = null
-			z = null
-		}
-	}
-	{
 		id = "b7f171a3-a193-41bb-8835-69b86d288b9f"
 		in_variables = {
 			a = {
@@ -535,38 +510,6 @@ nodes = [
 			y = null
 			z = null
 		}
-	}
-	{
-		id = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
-		out_events = {
-			out1 = [
-				{
-					event = 0
-					id = "e43f0e08-f2e0-4696-9f77-568c516072f2:0"
-					node = "e43f0e08-f2e0-4696-9f77-568c516072f2"
-				}
-			]
-			out2 = [
-				{
-					event = 0
-					id = "56b522e2-daba-450c-82ce-85d6bf164fe6:0"
-					node = "56b522e2-daba-450c-82ce-85d6bf164fe6"
-				}
-				{
-					event = 0
-					id = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a:0"
-					node = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
-				}
-			]
-			out3 = [
-				{
-					event = 0
-					id = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5:0"
-					node = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
-				}
-			]
-		}
-		type = "sequence"
 	}
 	{
 		id = "e43f0e08-f2e0-4696-9f77-568c516072f2"
@@ -717,6 +660,87 @@ nodes = [
 			object = null
 			position = null
 			unit = null
+		}
+	}
+	{
+		id = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+		in_variables = {
+			vector = {
+				node = "f4bd59c8-5946-45a1-91b7-36e55a2bf9df"
+				type = "vector3"
+				variable = "vector3"
+			}
+		}
+		out_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "d9bf57d3-b41d-40dd-aa8d-d41b38b91f64"
+		out_events = {
+			out1 = [
+				{
+					event = 0
+					id = "e43f0e08-f2e0-4696-9f77-568c516072f2:0"
+					node = "e43f0e08-f2e0-4696-9f77-568c516072f2"
+				}
+			]
+			out2 = [
+				{
+					event = 0
+					id = "56b522e2-daba-450c-82ce-85d6bf164fe6:0"
+					node = "56b522e2-daba-450c-82ce-85d6bf164fe6"
+				}
+				{
+					event = 0
+					id = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a:0"
+					node = "6a04de28-69c8-4844-a5f6-4864fdd7bc1a"
+				}
+			]
+			out3 = [
+				{
+					event = 0
+					id = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5:0"
+					node = "5d34c4f3-0d26-499a-a9f9-4b8f039ca8d5"
+				}
+			]
+		}
+		type = "sequence"
+	}
+	{
+		id = "e8b0b00d-ddda-4da3-b2e8-20b9f7b83e9c"
+		in_variables = {
+			a = {
+				node = "b7af7c1b-32ff-4b36-82c8-b2467352b2ff"
+				type = "float"
+				variable = "y"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = -1
+			value = null
 		}
 	}
 	{
