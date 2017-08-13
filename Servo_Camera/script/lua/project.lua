@@ -26,8 +26,9 @@ SimpleProject.config = {
 -- Optional function by SimpleProject after level, world and player is loaded 
 -- but before lua trigger level loaded node is activated.
 function Project.on_level_load_pre_flow()
+    math.randomseed( os.time() )
     local labyrinthGid = Grid()
-    labyrinthGid:CreateGrid(5, 6)
+    labyrinthGid:CreateGrid(15, 20)
     
    -- stingray.Level.trigger_event(SimpleProject.level, "explosion")
     

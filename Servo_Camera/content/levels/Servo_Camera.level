@@ -16,22 +16,6 @@ editor_metadata = {
 			{
 				Class = "Stingray.Foundation.Flow.VariableConnection"
 				FromItem = "Unit"
-				FromNode = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
-				ToItem = "Camera 1 Unit In"
-				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
-				Type = "Unit"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Unit"
-				FromNode = "f4b3d332-eb39-4cc4-a110-212608671d51"
-				ToItem = "Camera 2 Unit In"
-				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
-				Type = "Unit"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.VariableConnection"
-				FromItem = "Unit"
 				FromNode = "417ea3e2-6884-4bf2-bdf2-cd2017067334"
 				ToItem = "Camera 3 Unit In"
 				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
@@ -245,6 +229,46 @@ editor_metadata = {
 				ToNode = "9c066b63-607e-4785-ac2f-7f9f28266c49"
 				Type = "String"
 			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Numeric"
+				FromNode = "99e75da6-470a-4423-9367-f4143e7b93be"
+				ToItem = "Z"
+				ToNode = "f4cb3c5a-293e-4d0c-9e01-5c599f6373d6"
+				Type = "Float"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Rotation"
+				FromNode = "f4cb3c5a-293e-4d0c-9e01-5c599f6373d6"
+				ToItem = "Rotation"
+				ToNode = "9c066b63-607e-4785-ac2f-7f9f28266c49"
+				Type = "Quaternion"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "14fb39c7-5165-431d-8f80-4e209347b5a5"
+				Priority = 0
+				ToItem = "Camera Switcher In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "b056839e-3a68-4fe7-bd38-a9153a2ec9e0"
+				ToItem = "Camera 1 Unit In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "f4b3d332-eb39-4cc4-a110-212608671d51"
+				ToItem = "Camera 2 Unit In"
+				ToNode = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+				Type = "Unit"
+			}
 		]
 		Groups = [
 			{
@@ -330,6 +354,8 @@ editor_metadata = {
 					"dc24762e-8278-4b70-ba9a-9c877da39ece"
 					"c98211b3-5e74-4b3a-b3ad-4059e84c3506"
 					"d38f86cb-3360-4500-91e4-0c6d76250ffe"
+					"99e75da6-470a-4423-9367-f4143e7b93be"
+					"f4cb3c5a-293e-4d0c-9e01-5c599f6373d6"
 				]
 				Title = "Try to make grid"
 			}
@@ -1154,12 +1180,12 @@ editor_metadata = {
 				Brief = "Exposes an input port of type event for a unit flow or subroutine with a specified name for the port."
 				Class = "Stingray.Foundation.Flow.ExternalEvent"
 				EventName = {
-					Value = "in_spawnTile"
+					Value = "in_spawntile"
 				}
 				Id = "dc24762e-8278-4b70-ba9a-9c877da39ece"
 				NodeLocation = {
-					X = -1760
-					Y = -20
+					X = -1740
+					Y = -40
 				}
 				Out = {
 				}
@@ -1205,14 +1231,77 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.ExternalInputVector3"
 				Id = "de368893-1e9f-4994-b381-148c4ee75235"
 				Name = {
-					Value = "in_position"
+					Value = "in_tileposition"
 				}
 				NodeLocation = {
 					X = -1700
-					Y = -60
+					Y = -120
 				}
 				Title = "External Input Vector 3"
 				Vector3 = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Exposes an input port of type numeric for a unit flow or subroutine with a specified name for the port."
+				Class = "Stingray.Foundation.Flow.ExternalInputNumeric"
+				Id = "99e75da6-470a-4423-9367-f4143e7b93be"
+				Name = {
+					Value = "in_tilezrotation"
+				}
+				NodeLocation = {
+					X = -1740
+					Y = 40
+				}
+				Numeric = {
+				}
+				Title = "External Input Numeric"
+				Width = 180
+			}
+			{
+				Brief = "Assembles a rotation value from individual X, Y, and Z components."
+				Class = "Stingray.Foundation.Flow.RotationFromComponents"
+				Id = "f4cb3c5a-293e-4d0c-9e01-5c599f6373d6"
+				NodeLocation = {
+					X = -1540
+					Y = 40
+				}
+				Rotation = {
+				}
+				Title = "Rotation From Components"
+				Width = 160
+				X = {
+				}
+				Y = {
+				}
+				Z = {
+				}
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "k"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "14fb39c7-5165-431d-8f80-4e209347b5a5"
+				NodeLocation = {
+					X = -740
+					Y = -860
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
 				}
 				Width = 160
 			}
@@ -2381,20 +2470,20 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -0.257993
-				Y = -10.52088
-				Z = 7.356603
+				X = -1.548007
+				Y = -9.060249
+				Z = 11.177765
 			}
 			Rot = {
-				W = -0.99771
-				X = 0.067449
-				Y = -0.000343
-				Z = 0.005082
+				W = -0.960164
+				X = 0.267286
+				Y = -0.021857
+				Z = 0.078517
 			}
 			Scl = {
-				X = 1.000029
-				Y = 1.000034
-				Z = 1.000003
+				X = 1.000028
+				Y = 1.000035
+				Z = 1.000004
 			}
 			ScriptData = {
 			}
@@ -2418,19 +2507,19 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -33.028706
-				Y = 27.264565
-				Z = 26.310474
+				X = 0
+				Y = 0
+				Z = 26
 			}
 			Rot = {
-				W = -0.376027
-				X = 0.090826
-				Y = -0.216509
-				Z = 0.896369
+				W = -0.707107
+				X = 0.707107
+				Y = 0
+				Z = 0
 			}
 			Scl = {
-				X = 1.000013
-				Y = 1.000012
+				X = 1.000019
+				Y = 1.000019
 				Z = 1
 			}
 			ScriptData = {
@@ -2473,6 +2562,783 @@ editor_metadata = {
 			ScriptData = {
 			}
 			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "8aa5f9c5-decc-4e9f-91c5-60ef83a6a5ca"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_2_corner"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -32.404343
+				Y = 23.929497
+				Z = 0.203152
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = 0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+		}
+		{
+			Cameras = {
+			}
+			Id = "88628a19-1bbc-4a18-b2b6-00b24c285c39"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_1_floor"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -35.001671
+				Y = 24.203571
+				Z = 0.148846
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_1_floor/tile_1_floor"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b52bb137-b538-49c2-9486-20331a0fca17"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_2_corner1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.716722
+				Y = 23.929497
+				Z = 0.203152
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d1b1c0a0-f519-40eb-96be-dbf9877b80ef"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_3_wall_straight"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -26.967865
+				Y = 24.002575
+				Z = 0.243805
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+		}
+		{
+			Cameras = {
+			}
+			Id = "230f0a75-c119-40f4-a8d5-8052b2b420bb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_2_corner2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -34.746777
+				Y = 21.43647
+				Z = 0.203152
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+		}
+		{
+			Cameras = {
+			}
+			Id = "76dbf623-33b7-43b4-8185-fcee5dd68daa"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_3_wall_straight1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -32.175716
+				Y = 21.589859
+				Z = 0.243805
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = 0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b4b0654a-07ec-42a9-b526-9057c2ff0d41"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_4_corner_double"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.63937
+				Y = 21.490337
+				Z = 0.448157
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_4_corner_double/tile_4_corner_double"
+		}
+		{
+			Cameras = {
+			}
+			Id = "3fe9566d-7815-4a75-93a5-2ada6eb41b53"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.035667
+				Y = 23.537682
+				Z = 0.19208
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4a38214a-bdc7-4017-9335-e10ffbda1642"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_2_corner3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -34.817139
+				Y = 19.134895
+				Z = 0.203152
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+		}
+		{
+			Cameras = {
+			}
+			Id = "85da4292-9bd5-4d0a-af85-8220ec07d447"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_4_corner_double1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -32.064579
+				Y = 19.006927
+				Z = 0.448157
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_4_corner_double/tile_4_corner_double"
+		}
+		{
+			Cameras = {
+			}
+			Id = "48821030-1a58-410c-80fc-201a352daf77"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_3_wall_straight2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.789825
+				Y = 19.164085
+				Z = 0.243805
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c14c9fa2-5a7a-4540-9cfd-d1986b7bcf3a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -25.215324
+				Y = 17.102032
+				Z = 0.19208
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "192a5de2-48ab-4b61-a33d-e15d9a05ac0e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_3_wall_straight3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -34.642899
+				Y = 16.686993
+				Z = 0.243805
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4d791da0-9763-49a7-85c5-368d2dcb7591"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -34.201931
+				Y = 18.565193
+				Z = 0.19208
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = 0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "55209d72-2b0d-45e6-aaa1-b64f5d12011d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -31.776106
+				Y = 14.613808
+				Z = 0.19208
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6e6b994f-98c7-41f0-8b44-8ac35c9a0b49"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_6_column"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -23.628176
+				Y = 27.435184
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_6_column/tile_6_column"
+		}
+		{
+			Cameras = {
+			}
+			Id = "01103734-e283-47ff-81b7-75a2185f12b5"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_7_roof"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -27.187439
+				Y = 16.563107
+				Z = 0.156491
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_7_roof/tile_7_roof"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f7ce7138-bb56-4b7e-a410-e1e6baaac1ed"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -32.187263
+				Y = 16.55566
+				Z = 0.304782
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c1e5a703-5238-4f5f-bdca-ab65b8f581c1"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -29.730049
+				Y = 16.55566
+				Z = 0.304782
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = -0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "963a8690-98f7-4370-bb48-035f3493c266"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -27.150816
+				Y = 19.077908
+				Z = 0.304782
+			}
+			Rot = {
+				W = 0
+				X = 0
+				Y = 0
+				Z = 1
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+		}
+		{
+			Cameras = {
+			}
+			Id = "c11ae080-928c-4dea-b7b1-71842e0a3731"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "tile_5_corner_inwards7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -27.261755
+				Y = 21.740494
+				Z = 0.304782
+			}
+			Rot = {
+				W = -0.707107
+				X = 0
+				Y = 0
+				Z = 0.707107
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
 		}
 	]
 	Volumes = [
@@ -3153,7 +4019,9 @@ flow = {
 					variable = "vector3"
 				}
 				rotation = {
+					node = "f4cb3c5a-293e-4d0c-9e01-5c599f6373d6"
 					type = "quaternion"
+					variable = "rotation"
 				}
 				unit = {
 					node = "bab55b98-79da-465b-9f16-85ff5ddf13b2"
@@ -3202,7 +4070,7 @@ flow = {
 			}
 			type = "external_event"
 			variable_values = {
-				event_name = "in_spawnTile"
+				event_name = "in_spawntile"
 			}
 		}
 		{
@@ -3245,8 +4113,79 @@ flow = {
 			}
 			type = "external_input_vector3"
 			variable_values = {
-				name = "in_position"
+				name = "in_tileposition"
 				vector3 = null
+			}
+		}
+		{
+			id = "99e75da6-470a-4423-9367-f4143e7b93be"
+			out_variables = {
+				numeric = {
+					type = "float"
+				}
+			}
+			type = "external_input_numeric"
+			variable_values = {
+				name = "in_tilezrotation"
+				numeric = null
+			}
+		}
+		{
+			id = "f4cb3c5a-293e-4d0c-9e01-5c599f6373d6"
+			in_variables = {
+				x = {
+					type = "float"
+				}
+				y = {
+					type = "float"
+				}
+				z = {
+					node = "99e75da6-470a-4423-9367-f4143e7b93be"
+					type = "float"
+					variable = "numeric"
+				}
+			}
+			out_variables = {
+				rotation = {
+					type = "quaternion"
+				}
+			}
+			type = "rotation_from_components"
+			variable_values = {
+				rotation = null
+				x = null
+				y = null
+				z = null
+			}
+		}
+		{
+			id = "14fb39c7-5165-431d-8f80-4e209347b5a5"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "c2dda51b-b394-407f-929c-8371ae30f2f5:0"
+						node = "c2dda51b-b394-407f-929c-8371ae30f2f5"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "k"
+				device = "keyboard"
+				device_number = 0
+				value = null
 			}
 		}
 	]
@@ -4158,20 +5097,20 @@ units = [
 		}
 		name = "camera"
 		pos = [
-			-0.257993
-			-10.52088
-			7.356603
+			-1.548007
+			-9.060249
+			11.177765
 		]
 		rot = [
-			0.067449
-			-0.000343
-			0.005082
-			-0.99771
+			0.267286
+			-0.021857
+			0.078517
+			-0.960164
 		]
 		scl = [
-			1.000029
-			1.000034
-			1.000003
+			1.000028
+			1.000035
+			1.000004
 		]
 		type = "core/units/camera"
 	}
@@ -4188,19 +5127,19 @@ units = [
 		}
 		name = "camera1"
 		pos = [
-			-33.028706
-			27.264565
-			26.310474
+			0
+			0
+			26
 		]
 		rot = [
-			0.090826
-			-0.216509
-			0.896369
-			-0.376027
+			0.707107
+			0
+			0
+			-0.707107
 		]
 		scl = [
-			1.000013
-			1.000012
+			1.000019
+			1.000019
 			1
 		]
 		type = "core/units/camera"
@@ -4234,6 +5173,636 @@ units = [
 			1.000001
 		]
 		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "8aa5f9c5-decc-4e9f-91c5-60ef83a6a5ca"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_2_corner"
+		pos = [
+			-32.404343
+			23.929497
+			0.203152
+		]
+		rot = [
+			0
+			0
+			0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "88628a19-1bbc-4a18-b2b6-00b24c285c39"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_1_floor"
+		pos = [
+			-35.001671
+			24.203571
+			0.148846
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_1_floor/tile_1_floor"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b52bb137-b538-49c2-9486-20331a0fca17"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_2_corner1"
+		pos = [
+			-29.716722
+			23.929497
+			0.203152
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d1b1c0a0-f519-40eb-96be-dbf9877b80ef"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_3_wall_straight"
+		pos = [
+			-26.967865
+			24.002575
+			0.243805
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "230f0a75-c119-40f4-a8d5-8052b2b420bb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_2_corner2"
+		pos = [
+			-34.746777
+			21.43647
+			0.203152
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "76dbf623-33b7-43b4-8185-fcee5dd68daa"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_3_wall_straight1"
+		pos = [
+			-32.175716
+			21.589859
+			0.243805
+		]
+		rot = [
+			0
+			0
+			0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b4b0654a-07ec-42a9-b526-9057c2ff0d41"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_4_corner_double"
+		pos = [
+			-29.63937
+			21.490337
+			0.448157
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_4_corner_double/tile_4_corner_double"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3fe9566d-7815-4a75-93a5-2ada6eb41b53"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards"
+		pos = [
+			-25.035667
+			23.537682
+			0.19208
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4a38214a-bdc7-4017-9335-e10ffbda1642"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_2_corner3"
+		pos = [
+			-34.817139
+			19.134895
+			0.203152
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_2_corner/tile_2_corner"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "85da4292-9bd5-4d0a-af85-8220ec07d447"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_4_corner_double1"
+		pos = [
+			-32.064579
+			19.006927
+			0.448157
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_4_corner_double/tile_4_corner_double"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "48821030-1a58-410c-80fc-201a352daf77"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_3_wall_straight2"
+		pos = [
+			-29.789825
+			19.164085
+			0.243805
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c14c9fa2-5a7a-4540-9cfd-d1986b7bcf3a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards1"
+		pos = [
+			-25.215324
+			17.102032
+			0.19208
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "192a5de2-48ab-4b61-a33d-e15d9a05ac0e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_3_wall_straight3"
+		pos = [
+			-34.642899
+			16.686993
+			0.243805
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_3_wall_straight/tile_3_wall_straight"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4d791da0-9763-49a7-85c5-368d2dcb7591"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards2"
+		pos = [
+			-34.201931
+			18.565193
+			0.19208
+		]
+		rot = [
+			0
+			0
+			0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "55209d72-2b0d-45e6-aaa1-b64f5d12011d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards3"
+		pos = [
+			-31.776106
+			14.613808
+			0.19208
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6e6b994f-98c7-41f0-8b44-8ac35c9a0b49"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_6_column"
+		pos = [
+			-23.628176
+			27.435184
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_6_column/tile_6_column"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "01103734-e283-47ff-81b7-75a2185f12b5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_7_roof"
+		pos = [
+			-27.187439
+			16.563107
+			0.156491
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_7_roof/tile_7_roof"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f7ce7138-bb56-4b7e-a410-e1e6baaac1ed"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards4"
+		pos = [
+			-32.187263
+			16.55566
+			0.304782
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c1e5a703-5238-4f5f-bdca-ab65b8f581c1"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards5"
+		pos = [
+			-29.730049
+			16.55566
+			0.304782
+		]
+		rot = [
+			0
+			0
+			-0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "963a8690-98f7-4370-bb48-035f3493c266"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards6"
+		pos = [
+			-27.150816
+			19.077908
+			0.304782
+		]
+		rot = [
+			0
+			0
+			1
+			0
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "c11ae080-928c-4dea-b7b1-71842e0a3731"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "tile_5_corner_inwards7"
+		pos = [
+			-27.261755
+			21.740494
+			0.304782
+		]
+		rot = [
+			0
+			0
+			0.707107
+			-0.707107
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/Procedural_Pieces/tile_5_corner_inwards/tile_5_corner_inwards"
 	}
 ]
 volumes = [
